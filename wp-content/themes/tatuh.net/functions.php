@@ -95,8 +95,10 @@ add_action( 'widgets_init', 'semplicemente_widgets_init' );
  */
 function semplicemente_scripts() {
 	wp_enqueue_style( 'semplicemente-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'semplicemente-googlefonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
 	wp_enqueue_style( 'semplicemente-fontAwesome', get_template_directory_uri() .'/css/font-awesome.min.css');
+
+	wp_enqueue_style( 'semplicemente-fontVoltair', 'http://fonts.googleapis.com/css?family=Andika&subset=latin,cyrillic');
+	wp_enqueue_style( 'semplicemente-fontFiraSans', 'http://fonts.googleapis.com/css?family=Fira+Sans&subset=latin,cyrillic');
 
 	wp_enqueue_script( 'semplicemente-custom', get_template_directory_uri() . '/js/jquery.semplicemente.js', array('jquery'), '1.0', true );
 	wp_enqueue_script( 'semplicemente-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );

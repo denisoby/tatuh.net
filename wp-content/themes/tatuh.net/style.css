@@ -1,5 +1,5 @@
 /*
-Theme Name: Semplicemente
+Theme Name: Tatuh.net
 Theme URI: http://tatuh.net
 Author: ITea Lab
 Author URI: http://tatuh.net
@@ -58,7 +58,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 html {
-	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
 	overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
 	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
 	-ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
@@ -71,7 +70,11 @@ html {
 }
 
 body {
-	background-color: #e6e6e6;
+	background-color: #000;
+	background-attachment: scroll;
+   	background-image: url("http://livedemo00.template-help.com/wordpress_45028/wp-content/themes/theme45028/images/bg-wings.jpg");
+   	background-position: center top;
+  	background-repeat: repeat-y;
 }
 
 article,
@@ -94,7 +97,6 @@ table { /* tables still need 'cellspacing="0"' in the markup */
 	border-spacing: 0;
 }
 caption, th, td {
-	font-weight: normal;
 	text-align: left;
 }
 blockquote:before, blockquote:after,
@@ -123,19 +125,16 @@ button,
 input,
 select,
 textarea {
-	color: #888888;
-	font-family: 'Source Sans Pro', sans-serif;
+	color: #898989;
+	font-family: "Fira Sans", sans-serif;
 	font-size: 14px;
-	line-height: 1.8;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-webkit-text-size-adjust: none;
 }
 h1, h2, h3, h4, h5, h6 {
+	font-family: "Andika",​sans-serif;
 	clear: both;
-	color: #404040;
+	color: #fff;
 }
-h1 {font-size: 28px;line-height:3.4rem;}
+h1 {font-size: 26px;line-height:3.4rem;}
 h2 {font-size: 24px;line-height:2.8rem;}
 h3 {font-size: 20px;line-height:2.4rem;}
 h4 {font-size: 18px;}
@@ -155,8 +154,8 @@ blockquote {
 	padding: 15px 15px 15px 45px;
 	margin: 0 0 1.5em;
 	position: relative;
-	border-left: 5px solid #36c1c8;
-	border-right: 2px solid #36c1c8;
+	border-left: 5px solid #74bec5;
+	border-right: 2px solid #74bec5;
 }
 blockquote::before {
 	content: "\201C";
@@ -283,7 +282,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid #36c1c8;
+	border: 1px solid #74bec5;
 	border-radius: 4px;
 	background: #ffffff;
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
@@ -295,7 +294,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	background: #36c1c8;
+	background: #74bec5;
 	color: #ffffff;
 }
 button:focus,
@@ -306,7 +305,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	background: #36c1c8;
+	background: #74bec5;
 	color: #ffffff;
 	outline: none;
 }
@@ -368,9 +367,10 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: #404040;
+	color: #fff;
 	text-decoration:none;
-	text-transform: uppercase;
+
+	font-weight: bold;
 }
 a:hover,
 a:focus,
@@ -390,11 +390,10 @@ a:active {
 	text-decoration: underline;
 }
 .main-navigation {
-	clear: both;
-	display: block;
-	width: 100%;
-	border-bottom: 1px solid #bbb;
-   	border-top: 1px solid #bbb;
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #343434 0%, #1e1e1e 100%) repeat scroll 0 0;
+	float: none;
+	position: relative;
+	margin: 0 1.5em;
 }
 .main-navigation ul {
 	list-style: none;
@@ -434,7 +433,7 @@ a:active {
 	top: 67px;
 	left: auto;
 	z-index: 99999;
-	background: #ffffff;
+	background: #527d7b;
 	
 	visibility:hidden;
 	opacity:0;
@@ -475,7 +474,7 @@ a:active {
 		display: block;
 		width: 100%;
 
-		background: #36c1c8;
+		background: #74bec5;
 		color: #ffffff;
 		text-align: left;
 		float:left;
@@ -489,7 +488,7 @@ a:active {
 		top: 0;
 		border-bottom: 0px;
 		padding-left: 5%;
-		background: #36c1c8;
+		background: #74bec5;
 		width: 100%;
 		opacity: 1;
 		visibility: visible;
@@ -662,10 +661,9 @@ header.entry-header:after,
 
 }
 .widget-title h3 {
-	color: #ff6111;
-	font-size: 22px;
-	font-weight: normal;
-	text-transform: uppercase;
+	font-family: "Andika",​sans-serif;
+	font-size: 36px;
+	font-weight: 400;
 	display: inline-block;
 	padding-bottom: 12px;
 }
@@ -687,14 +685,11 @@ aside ul li ul.sub-menu li, aside ul li ul.children li {
 10.0 Content
 --------------------------------------------------------------*/
 #page {
-	background-color: #fff;
 	max-width: 1040px;
-	margin: 30px auto;
-	padding-left: 40px;
-	padding-right: 40px;
+	margin: 0px auto;
 }
 header.site-header {
-	margin-bottom: 0;
+	margin: 30px 0;
 }
 #primary {
 	width: 75%;
@@ -703,10 +698,10 @@ header.site-header {
 }
 #secondary {
 	width: 25%;
-	float:right;
+	float:left;
 }
 .site-branding, .site-social {
-	padding: 1.5em 0;
+	padding-left: 1.5em;
 }
 .site-branding {
 	float:left;
@@ -718,9 +713,7 @@ header.site-header {
 	width: 50%;
 	text-align: right;
 }
-.main-navigation, .hentry, #secondary aside, header.page-header {
-	background: #ffffff;
-}
+
 header.entry-header, footer.entry-footer {
 	padding: 0 1.5em;
 }
@@ -730,14 +723,11 @@ header.entry-header {
 }
 header.page-header {
 	padding: 1.5em;
-	margin-bottom: 1.5em;
 }
 header.page-header h1 span {
-	font-weight: 700;
 	letter-spacing: -1px;
 }
 header.entry-header .entry-title {
-	font-weight: 700;
 	margin-bottom: 0.5em;
 }
 footer.entry-footer {
@@ -781,17 +771,14 @@ aside ul li {
 }
 h1.site-title {
 	text-transform: uppercase;
-	font-weight: 700;
 	letter-spacing: -3px;
 	font-size: 35px;
 }
 h2.site-description {
-	font-weight: 300;
 	font-size: 21px;
 }
 .posted-on, .byline, .comments-link, .cat-links, .entry-format {
 	padding-right: 15px;
-	font-weight: 300;
 }
 .edit-link {
 	float:left;
@@ -804,29 +791,28 @@ h2.site-description {
 	float: right;
 	padding: 8px 12px;
 	border-radius: 4px;
-	border: 1px solid #36c1c8;
+	border: 1px solid #74bec5;
 	line-height: 1;
 }
 .readMoreLink:hover {
-	background: #36c1c8;
+	background: #74bec5;
 }
 .readMoreLink:hover a {
 	color: #ffffff;
 }
 .dataBottom a {
-	border: 1px solid #36c1c8;
+	border: 1px solid #74bec5;
 	border-radius: 4px;
 	display: inline-block;
 	margin: 2px 0;
 	padding: 0px 5px;
-	font-weight: 300;
 }
 .dataBottom a:hover {
-	background: #36c1c8;
+	background: #74bec5;
 	color: #ffffff;
 }
 .entry-meta i {
-	color: #36c1c8;
+	color: #74bec5;
 }
 .topSearchForm {
 	display:none;
@@ -852,10 +838,9 @@ h2.site-description {
 	cursor:pointer;
 }
 .top-search.active {
-	color: #36c1c8;
+	color: #74bec5;
 }
 .nav-links, .comments-title {
-	background: #ffffff;
 	border: 1px solid rgba(0,0,0,.1);
 	border-bottom: 2px solid rgba(0,0,0,.1);
 	border-radius: 4px;
@@ -892,8 +877,9 @@ h2.site-description {
 	margin-top: 1.5em;
 }
 .site-info {
-	font-size: 85%;
 	text-align: center;
+	color: #fff;
+	margin: 40px 0;
 }
 .comment-awaiting-moderation {
 	color: #ff0000;
@@ -902,7 +888,7 @@ h2.site-description {
 10.1 Posts and pages
 --------------------------------------------------------------*/
 .sticky {
-	border: 3px solid #36c1c8;
+	border: 3px solid #74bec5;
 	position: relative;
 }
 .sticky:before {
@@ -911,7 +897,7 @@ h2.site-description {
 	position: absolute;
 	width: 50px;
 	height: 50px;
-	background: #36c1c8;
+	background: #74bec5;
 	right: 0;
 	top: 0;
 	text-align: center;

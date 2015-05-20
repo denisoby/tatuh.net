@@ -17,7 +17,7 @@
 				$url = home_url('/');
 				$year = date('Y');
 			?>
-			&copy; <?php echo $year ?> <a href="<?php echo esc_url($url); ?>"><?php echo $name ?></a>			
+			&copy; <?php echo $year ?> <?php echo $name ?>		
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
