@@ -89,9 +89,6 @@ nav,
 section {
 	display: block;
 }
-ol, ul {
-	list-style: none;
-}
 table { /* tables still need 'cellspacing="0"' in the markup */
 	border-collapse: separate;
 	border-spacing: 0;
@@ -220,20 +217,7 @@ hr {
 	height: 1px;
 	margin-bottom: 1.5em;
 }
-ul, ol {
-	
-}
-ul {
-	list-style: disc;
-}
-ol {
-	list-style: decimal;
-}
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
+
 dt {
 	font-weight: bold;
 }
@@ -620,13 +604,7 @@ a:active {
 footer.entry-footer:before,
 footer.entry-footer:after,
 header.entry-header:before,
-header.entry-header:after,
-.widget_archive li:before, 
-.widget_archive li:after, 
-.widget_categories li:before,
-.widget_categories li:after,
-.nav-links:before,
-.nav-links:after {
+header.entry-header:after {
 	content: '';
 	display: table;
 }
@@ -638,13 +616,9 @@ header.entry-header:after,
 .site-content:after,
 .site-footer:after,
 footer.entry-footer:after,
-header.entry-header:after,
-.widget_archive li:after, 
-.widget_categories li:after,
-.nav-links:after {
+header.entry-header:after {
 	clear: both;
 }
-
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
@@ -666,26 +640,18 @@ header.entry-header:after,
 
 }
 .widget-title h3 {
-	font-family: "Andika",​sans-serif;
+	font-family: "Georgia",​​sans-serif;
 	font-size: 36px;
 	font-weight: 400;
 	display: inline-block;
 	padding-bottom: 12px;
 }
-.widget_archive li, .widget_categories li {
-	
-}
-.widget_archive li a, .widget_categories li a {
-	
-}
+
 aside ul li ul.sub-menu, aside ul li ul.children {
-	font-family: Arial,​"Helvetica Neue",​Helvetica,​sans-serif;
-	padding-left: 5%;
-	padding-top: 12px;
+	padding-top: 1em;
+	padding-left: 1em;
 }
-aside ul li ul.sub-menu li, aside ul li ul.children li {
-	border-bottom: 0px;
-}
+
 
 /*--------------------------------------------------------------
 10.0 Content
@@ -768,12 +734,14 @@ span.overlay-img {
 	border-top-right-radius: 4px;
 }
 aside ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+	list-style: none;
 }
-aside ul li {
-	padding-bottom: 12px;
+aside li {
+	padding-bottom: 1em;
+}
+aside li:before {
+    	content: "• ";
+    	color: #FF482A;
 }
 h1.site-title {
 	font-family: "Georgia",​sans-serif;
