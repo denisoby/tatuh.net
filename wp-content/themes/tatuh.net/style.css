@@ -126,17 +126,17 @@ input,
 select,
 textarea {
 	color: #898989;
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Tahoma", sans-serif;
 	font-size: 14px;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Andika",​sans-serif;
+	font-family: "Georgia",​sans-serif;
 	clear: both;
 	color: #fff;
 }
-h1 {font-size: 26px;line-height:3.4rem;}
-h2 {font-size: 24px;line-height:2.8rem;}
-h3 {font-size: 20px;line-height:2.4rem;}
+h1 {font-size: 30px; line-height: 36px}
+h2 {font-size: 24px;}
+h3 {font-size: 20px;}
 h4 {font-size: 18px;}
 h5 {font-size: 15px;}
 h6 {font-size: 12px;}
@@ -369,7 +369,6 @@ textarea {
 a {
 	color: #fff;
 	text-decoration:none;
-
 	font-weight: bold;
 }
 a:hover,
@@ -387,7 +386,7 @@ a:active {
 .main-navigation li.current-page-ancestor > a,
 .main-navigation .current_page_item > a, 
 .main-navigation .current_page_parent > a {
-	text-decoration: underline;
+	background-color: #ff482a;
 }
 .main-navigation {
 	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #343434 0%, #1e1e1e 100%) repeat scroll 0 0;
@@ -405,9 +404,15 @@ a:active {
 	position: relative;
 }
 .main-navigation a {
+	font-family: "Georgia",​sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	letter-spacing: -2px;
 	display: block;
+	text-transform: uppercase;
+	padding: 0.5em 1em;
 	text-decoration: none;
-	padding: 1.5em 1em;
 }
 .main-navigation ul li .indicator {
 	position: absolute;
@@ -428,12 +433,12 @@ a:active {
 	content: "\f0da";
 }
 .main-navigation ul ul {
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #4c4c4c 0%, #2c2c2c 100%) repeat scroll 0 0;
+	border-top: 1px solid #484848;
 	float: left;
 	position: absolute;
-	top: 67px;
 	left: auto;
 	z-index: 99999;
-	background: #527d7b;
 	
 	visibility:hidden;
 	opacity:0;
@@ -674,6 +679,7 @@ header.entry-header:after,
 	
 }
 aside ul li ul.sub-menu, aside ul li ul.children {
+	font-family: Arial,​"Helvetica Neue",​Helvetica,​sans-serif;
 	padding-left: 5%;
 	padding-top: 12px;
 }
@@ -685,7 +691,7 @@ aside ul li ul.sub-menu li, aside ul li ul.children li {
 10.0 Content
 --------------------------------------------------------------*/
 #page {
-	max-width: 1040px;
+	max-width: 1230px;
 	margin: 0px auto;
 }
 header.site-header {
@@ -714,11 +720,11 @@ header.site-header {
 	text-align: right;
 }
 
-header.entry-header, footer.entry-footer {
+footer.entry-footer {
 	padding: 0 1.5em;
 }
 header.entry-header {
-	padding: 1.5em;
+	padding: 1.5em 1.5em 0 1.5em;
 	border-bottom: 1px solid rgba(0,0,0,.05);
 }
 header.page-header {
@@ -770,14 +776,15 @@ aside ul li {
 	padding-bottom: 12px;
 }
 h1.site-title {
+	font-family: "Georgia",​sans-serif;
 	text-transform: uppercase;
-	letter-spacing: -3px;
 	font-size: 35px;
 }
 h2.site-description {
 	font-size: 21px;
 }
-.posted-on, .byline, .comments-link, .cat-links, .entry-format {
+.posted-on, .byline, .cat-links, .entry-format {
+	color: #fff;
 	padding-right: 15px;
 }
 .edit-link {
@@ -788,18 +795,28 @@ h2.site-description {
 	float: none;
 }
 .readMoreLink {
-	float: right;
-	padding: 8px 12px;
-	border-radius: 4px;
-	border: 1px solid #74bec5;
-	line-height: 1;
+	font-family: "Georgia",​sans-serif;
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #0c0c0c 0%, #151515 100%) repeat scroll 0 0;
+    	border-color: #373737;
+	border-image: none;
+    	border-radius: 0;
+    	border-style: none none solid;
+    	border-width: medium medium 1px;
+    	box-shadow: none;
+	letter-spacing: -1px;
+    	padding: 7px 23px;
+    	text-transform: uppercase;
+    	transition: all 200ms ease 0s;
 }
 .readMoreLink:hover {
-	background: #74bec5;
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #151515 0%, #0c0c0c 100%) repeat scroll 0 0;
+    	border-color: #5e5e5e;
+    	box-shadow: none;
+    	color: #5e5e5e;
+    	text-decoration: none;
+    	text-shadow: none;
 }
-.readMoreLink:hover a {
-	color: #ffffff;
-}
+
 .dataBottom a {
 	border: 1px solid #74bec5;
 	border-radius: 4px;
@@ -812,7 +829,7 @@ h2.site-description {
 	color: #ffffff;
 }
 .entry-meta i {
-	color: #74bec5;
+	color: #a7a7a7;
 }
 .topSearchForm {
 	display:none;
@@ -908,7 +925,7 @@ h2.site-description {
 .hentry {
 	margin: 0 0 1.5em;
 }
-.byline,
+
 .updated {
 	display: none;
 }
@@ -919,7 +936,7 @@ h2.site-description {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 1.5em 0;
 	padding: 0 1.5em;
 }
 .page-links {
@@ -940,8 +957,6 @@ h2.site-description {
 --------------------------------------------------------------*/
 .comment-content a {
 	word-wrap: break-word;
-}
-.bypostauthor {
 }
 #comments ol {
 	list-style-type: none;
@@ -1119,7 +1134,7 @@ object {
 		max-width: 445px;
 		margin: 20px auto;
 	}
-	.posted-on, .byline, .comments-link, .cat-links, .entry-format {
+	.posted-on, .byline, . ink, .cat-links, .entry-format {
 		display: block;
 	}
 	#secondary {

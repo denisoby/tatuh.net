@@ -14,15 +14,6 @@
 	?>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
-
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php semplicemente_posted_on(); ?>
-			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-				<span class="comments-link"><i class="fa fa-comment-o spaceRight"></i><?php comments_popup_link( __( 'Leave a comment', 'semplicemente' ), __( '1 Comment', 'semplicemente' ), __( '% Comments', 'semplicemente' ) ); ?></span>
-			<?php endif; ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -33,12 +24,20 @@
 				'after'  => '</div>',
 			) );
 		?>
+
+<a class="readMoreLink" href="<?php echo get_permalink(); ?>"><?php _e('Читать дальше', 'semplicemente') ?><i class="fa spaceLeft fa-angle-double-right"></i></a>
+
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">	
-		<?php edit_post_link( __( 'Edit', 'semplicemente' ), '<span class="edit-link"><i class="fa fa-pencil-square-o spaceRight"></i>', '</span>' ); ?>
-		<div class="readMoreLink">
-			<a href="<?php echo get_permalink(); ?>"><?php _e('Read More', 'semplicemente') ?><i class="fa spaceLeft fa-angle-double-right"></i></a>
-		</div>
+<?php if ( 'post' == get_post_type() ) : ?>
+<div class="entry-meta">
+<?php edit_post_link( __( 'Edit', 'semplicemente' ), '<span class="edit-link"><i class="fa fa-pencil-square-o spaceRight"></i>', '</span>' ); ?>
+<?php semplicemente_posted_on(); ?>
+<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+<span class="comments-link"><i class="fa fa-comment-o spaceRight"></i><?php comments_popup_link( __( 'Комментарии', 'semplicemente' ), __( '1 Comment', 'semplicemente' ), __( '% Comments', 'semplicemente' ) ); ?></span>
+<?php endif; ?>
+</div><!-- .entry-meta -->
+<?php endif; ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

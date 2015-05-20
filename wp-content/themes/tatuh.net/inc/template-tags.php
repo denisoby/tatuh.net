@@ -78,8 +78,7 @@ function semplicemente_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( '<i class="fa fa-clock-o spaceRight"></i>%s', 'post date', 'semplicemente' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		_x( '<i class="fa fa-clock-o spaceRight"></i>%s', 'post date', 'semplicemente' ), $time_string
 	);
 
 	$byline = sprintf(
