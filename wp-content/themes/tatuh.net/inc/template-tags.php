@@ -78,7 +78,7 @@ function semplicemente_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( '<i class="fa fa-clock-o spaceRight"></i>%s', 'post date', 'semplicemente' ), $time_string
+		_x( '<i class="fa fa-calendar spaceRight"></i>%s', 'post date', 'semplicemente' ), $time_string
 	);
 
 	$byline = sprintf(
