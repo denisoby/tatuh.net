@@ -8,7 +8,7 @@
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 	</header><!-- .entry-header -->
-<div class="thumbnail thumbnail-post thumbnail-left">
+<div class="thumbnail thumbnail-left">
 <?php
 if ( '' != get_the_post_thumbnail() ) {
 echo '<a href="' .get_permalink(). '">';

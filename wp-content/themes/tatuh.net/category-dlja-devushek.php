@@ -4,7 +4,7 @@
  */
 ?>
 <?php get_header();?>
-<section id="primary" class="content-area">
+<section class="content-area">
 <main id="main" class="site-main" role="main">
 <header class="page-header">
 <h1 class="entry-title">
