@@ -1,0 +1,4 @@
+for f in *.jpg; 
+do 
+    gm convert -geometry 300x  "$f" "300/$f"; 
+done;

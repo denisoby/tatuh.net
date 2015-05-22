@@ -55,7 +55,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'semplicemente' ); ?></p>
+		<p class="no-comments"><?php _e( 'Комментарии отключены.', 'semplicemente' ); ?></p>
 	<?php endif; ?>
 
 	<?php
@@ -64,22 +64,22 @@ if ( post_password_required() ) {
 	$aria_req = ( $req ? " aria-required='true'" : '' );
 
 	$fields =  array(
-		'author' => '<p class="comment-form-author"><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' placeholder="' . __( 'Name *'  , 'semplicemente' ) . '"/></p>',
+		'author' => '<p class="comment-form-author"><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' placeholder="' . __( 'Имя *'  , 'semplicemente' ) . '"/></p>',
 		'email'  => '<p class="comment-form-email"><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" ' . $aria_req . ' placeholder="' . __( 'Email *'  , 'semplicemente' ) . '"/></p>',
 		'url'    => '<p class="comment-form-url"><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" placeholder="' . __( 'Website'  , 'semplicemente' ) . '"/></p>',
 	);
-	$required_text = __(' Required fields are marked ', 'semplicemente').' <span class="required">*</span>';
+	$required_text = __(' Обязательные поля отмечены ', 'semplicemente').' <span class="required">*</span>';
 	?>
 	<?php comment_form( array(
 		'fields' => apply_filters( 'comment_form_default_fields', $fields ),
-		'must_log_in' => '<p class="must-log-in">' .  sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.' , 'semplicemente' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
-		'logged_in_as' => '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>'  , 'semplicemente' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
-		'comment_notes_before' => '<p class="comment-notes">' . __( 'Your email address will not be published.'  , 'semplicemente' ) . ( $req ? $required_text : '' ) . '</p>',
-		'title_reply' => __( 'Leave a Reply'  , 'semplicemente' ),
-		'title_reply_to' => __( 'Leave a Reply to %s'  , 'semplicemente' ),
-		'cancel_reply_link' => __( 'Cancel reply'  , 'semplicemente' ) . '<i class="fa fa-times spaceLeft"></i>',
-		'label_submit' => __( 'Post Comment'  , 'semplicemente' ),
-		'comment_field' => '<div class="clear"></div><p class="comment-form-comment"><textarea id="comment" name="comment" rows="8" aria-required="true" placeholder="' . __( 'Comment *'  , 'semplicemente' ) . '"></textarea></p>'
+		'must_log_in' => '<p class="must-log-in">' .  sprintf( __( 'Вы должны быть <a href="%s">авторизованы</a> чтобы комментировать.' , 'semplicemente' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
+		'logged_in_as' => '<p class="logged-in-as">' . sprintf( __( 'Ваш логин: <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Выйти?</a>'  , 'semplicemente' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
+		'comment_notes_before' => '<p class="comment-notes">' . __( 'Ваш email не будет виден никому.'  , 'semplicemente' ) . ( $req ? $required_text : '' ) . '</p>',
+		'title_reply' => __( 'Ответить'  , 'semplicemente' ),
+		'title_reply_to' => __( 'Ответить для %s'  , 'semplicemente' ),
+		'cancel_reply_link' => __( 'Отмена ответа'  , 'semplicemente' ) . '<i class="fa fa-times spaceLeft"></i>',
+		'label_submit' => __( 'Послать'  , 'semplicemente' ),
+		'comment_field' => '<div class="clear"></div><p class="comment-form-comment"><textarea id="comment" name="comment" rows="8" aria-required="true" placeholder="' . __( 'Комментарий *'  , 'semplicemente' ) . '"></textarea></p>'
 	)); 
 	?>
 

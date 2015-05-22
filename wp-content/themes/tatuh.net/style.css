@@ -3,10 +3,8 @@ Theme Name: Tatuh.net
 Theme URI: http://tatuh.net
 Author: ITea Lab
 Author URI: http://tatuh.net
-Description: Simple and Clean WordPress Theme created by CrestaProject.com. Live demo http://crestaproject.com/demo/semplicemente/
-Version: 1.5.3
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Description: To be later...
+Version: 0.9
 Text Domain: Tatuh.Net
 Domain Path: /languages/
 Tags: two-columns, right-sidebar, responsive-layout, custom-background, custom-menu, custom-colors, sticky-post, featured-images, theme-options, translation-ready, rtl-language-support
@@ -134,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 }
 h1 {font-size: 30px; line-height: 36px}
-h2 {font-size: 24px;}
+h2 {font-size: 24px; padding-bottom: 1.5em;}
 h3 {font-size: 20px;}
 h4 {font-size: 18px;}
 h5 {font-size: 15px;}
@@ -644,12 +642,10 @@ header.entry-header:after {
 .widget_search .search-submit {
 	display: none;
 }
-.widget-title {
 
-}
 .widget-title h3 {
 	font-family: "Georgia",​​sans-serif;
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: 400;
 	display: inline-block;
 	padding-bottom: 12px;
@@ -680,15 +676,11 @@ header.site-header {
 	width: 25%;
 	float:left;
 }
-
-footer.entry-footer {
-	padding: 0 1.5em;
-}
 header.entry-header {
 	padding: 1.5em 1.5em 0 1.5em;
-	border-bottom: 1px solid rgba(0,0,0,.05);
 }
 header.page-header {
+	font-weight: 700;
 	padding: 1.5em;
 }
 header.page-header h1 span {
@@ -698,21 +690,8 @@ header.entry-header .entry-title {
 	margin-bottom: 0.5em;
 }
 footer.entry-footer {
-	padding: 1.5em;
+	padding: 1.5em 1.5em 0 1.5em;
 	border-top: 1px solid rgba(0,0,0,.05);
-}
-.entry-featuredImg {
-	position: relative;
-}
-.entry-featuredImg img {
-	display: block;
-	width:100%;
-	-webkit-border-top-left-radius: 4px;
-	-webkit-border-top-right-radius: 4px;
-	-moz-border-radius-topleft: 4px;
-	-moz-border-radius-topright: 4px;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
 }
 span.overlay-img {
 	background:url(./images/goto.png) center center no-repeat black;
@@ -728,10 +707,10 @@ span.overlay-img {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 }
-aside ul {
+ul {
 	list-style: none;
 }
-aside li {
+li {
 	padding-bottom: 1em;
 }
 aside li:before {
@@ -758,26 +737,9 @@ h2.site-description {
 	float: none;
 }
 .readMoreLink {
-	font-family: "Georgia",​sans-serif;
-	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #0c0c0c 0%, #151515 100%) repeat scroll 0 0;
-    	border-color: #373737;
-	border-image: none;
-    	border-radius: 0;
-    	border-style: none none solid;
-    	border-width: medium medium 1px;
-    	box-shadow: none;
-	letter-spacing: -1px;
-    	padding: 7px 23px;
-    	text-transform: uppercase;
-    	transition: all 200ms ease 0s;
-}
-.readMoreLink:hover {
-	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #151515 0%, #0c0c0c 100%) repeat scroll 0 0;
-    	border-color: #5e5e5e;
-    	box-shadow: none;
-    	color: #5e5e5e;
-    	text-decoration: none;
-    	text-shadow: none;
+	color: #fff;
+	font-weight: 400;
+	text-decoration: underline;
 }
 
 .dataBottom a {
@@ -886,7 +848,7 @@ h2.site-description {
 	color: #ffffff;
 }
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .updated {
@@ -899,7 +861,7 @@ h2.site-description {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0;
+	margin: 0;
 	padding: 0 1.5em;
 }
 .page-links {
