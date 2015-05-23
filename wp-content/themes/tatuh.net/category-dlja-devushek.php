@@ -4,34 +4,45 @@
  */
 ?>
 <?php get_header();?>
+<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+</div>
 <section class="content-area">
 <main id="main" class="site-main" role="main">
+<article>
 <header class="page-header">
 <h1 class="entry-title">
-Татуировки для девушек. Роспись по атласной коже.
+Подбор татуировки для девушек
 </h1>
-</header>
-<article>
-<header class="header-links">
-<a href="">
-<span class="label-link label-main">на руках</span>
+<div class="header-links">
+<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek">
+<span class="label-link label-main">рука</span>
 </a>
-<a href="">
-<span class="label-link label-main">на ногах</span>
+<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-na-ladoni.html">
+<span class="label-link label-main">ладонь</span>
 </a>
-<a href="">
-<span class="label-link label-main">на спине</span>
+<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-na-zapyaste-dlya-devushki.html">
+<span class="label-link label-main">запястье</span>
 </a>
-<a href="">
-<span class="label-link label-main">спереди</span>
+<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-na-lokte-dlya-devushek.html">
+<span class="label-link label-main">локоть</span>
 </a>
+<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-dlya-devushek-na-pleche-i-predpleche.html">
+<span class="label-link label-main">плечо</span>
+</a>
+<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-dlya-devushek-na-pleche-i-predpleche.html">
+<span class="label-link label-main">предплечье</span>
+</a>
+<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-rukava-dlya-devushek.html">
+<span class="label-link label-main">рукава</span>
+</a>
+</div>
 </header>
 <div class="entry-content">
-Пряча кожу под очередным рисунком, ты всё больше оголяешь душу. Нанося крошечный значок на ладошку, ты даёшь ключик от своей души тому, кто возьмёт тебя за руку. Создавая вместе с тату-мастером новый узор, ты рассказываешь всему миру о том, какая ты на самом деле. Тот, кто увидит и поймёт, станет самым близким тебе человеком.
-<br><br>
-Философия женской декоративной татуировки – очень тонкая наука. Грань между ультрамодным и вульгарным, между концептуальным и общеупотребимым, между символом и трендом практически стёрлась. И только женщина с очень хорошим вкусом способна выбрать тот эскиз, который сделает её ещё прекраснее. И то место, на котором эта телесная «живопись» будет выглядеть в меру женственно, в меру эротично и не в меру круто.
-<br><br>
-Определяясь с рисунком и локацией, стоит обратить внимание на руки. Это удобная зона для демонстрации красивых тату.
+
 </div>
 	</article>
 	</main>

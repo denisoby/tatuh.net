@@ -141,6 +141,7 @@ p {
 	margin-bottom: 1.5em;
 }
 b, strong {
+	color: #fff;
 	font-weight: bold;
 }
 dfn, cite, em, i {
@@ -670,7 +671,7 @@ header.site-header {
 .content-area {
 	width: 75%;
 	float:left;
-	padding: 0 1.5em;
+	padding: 0 1.5em 1.5em;
 }
 .widget-area {
 	width: 25%;
@@ -809,11 +810,7 @@ h2.site-description {
 	float: right;
 }
 .page-content {
-	background: #ffffff;
-	padding: 1.5em !important;
-	border: 1px solid rgba(0,0,0,.1);
-	border-bottom: 2px solid rgba(0,0,0,.1);
-	border-radius: 4px;
+
 }
 .taxonomy-description {
 	margin-top: 1.5em;
@@ -853,16 +850,6 @@ h2.site-description {
 
 .updated {
 	display: none;
-}
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 0;
-	padding: 0;
 }
 .page-links {
 	clear: both;
@@ -933,14 +920,6 @@ h2.site-description {
 /*--------------------------------------------------------------
 12.0 Media
 --------------------------------------------------------------*/
-.page-content img.wp-smiley,
-.entry-content img.wp-smiley,
-.comment-content img.wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
-}
 /* Make sure embeds and iframes fit their containers */
 embed,
 iframe,
@@ -1041,7 +1020,7 @@ object {
 		max-width: 445px;
 		margin: 20px auto;
 	}
-	.posted-on, .byline, . ink, .cat-links, .entry-format {
+	.posted-on, . ink, .cat-links, .entry-format {
 		display: block;
 	}
 	h1 {font-size: 22px;line-height:2.8rem;}

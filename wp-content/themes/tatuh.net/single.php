@@ -7,7 +7,15 @@
 
 get_header(); ?>
 
+<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+</div>
+
 	<div class="content-area">
+
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
