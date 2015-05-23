@@ -11,11 +11,14 @@
 <h1 class="entry-title">
 Выбор тату
 </h1>
-</header>
-<div class="entry-content">
+<div class="header-links">
 <a href="/vybor-tatu/dlya-devushek">
 <span class="label-link label-main">для девушек</span>
 </a>
+</div>
+</header>
+<div class="entry-content">
+
 </div>
 	</article>
 	</main>

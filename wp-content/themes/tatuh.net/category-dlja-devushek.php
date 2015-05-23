@@ -18,25 +18,25 @@
 Подбор татуировки для девушек
 </h1>
 <div class="header-links">
-<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek">
+<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek">
 <span class="label-link label-main">рука</span>
 </a>
-<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-na-ladoni.html">
+<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-na-ladoni.html">
 <span class="label-link label-main">ладонь</span>
 </a>
-<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-na-zapyaste-dlya-devushki.html">
+<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-na-zapyaste-dlya-devushki.html">
 <span class="label-link label-main">запястье</span>
 </a>
-<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-na-lokte-dlya-devushek.html">
+<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-na-lokte-dlya-devushek.html">
 <span class="label-link label-main">локоть</span>
 </a>
-<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-dlya-devushek-na-pleche-i-predpleche.html">
+<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-dlya-devushek-na-pleche-i-predpleche.html">
 <span class="label-link label-main">плечо</span>
 </a>
-<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-dlya-devushek-na-pleche-i-predpleche.html">
+<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-dlya-devushek-na-pleche-i-predpleche.html">
 <span class="label-link label-main">предплечье</span>
 </a>
-<a href="/dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-rukava-dlya-devushek.html">
+<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-rukava-dlya-devushek.html">
 <span class="label-link label-main">рукава</span>
 </a>
 </div>

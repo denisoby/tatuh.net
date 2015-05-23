@@ -1,32 +1,25 @@
 <?php
 /**
- * Category Template: FSeoCatTemplate
+ * Category Template: FSeoCatZnacheniyaPticy
  */
 ?>
-
 <?php get_header();?>
+<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+</div>
 <section class="content-area">
-	<main id="main" class="site-main" role="main">
-	<header class="page-header">
-	Текущий раздел: <strong><?php single_cat_title(); ?></strong>
-	Подразделы:
-	<ul>
-	<?php
-	$id = get_query_var('cat');
-	$args = array(	'parent' => $id );
-	foreach (get_categories($args) as $cat) : ?>
-	<li>
-	<a href="<?php echo get_category_link($cat->term_id); ?>">
-		<strong><?php echo $cat->cat_name; ?></strong>
-	</a>
-	</li>
-	<?php endforeach; ?>
-	</ul>
-	</header>
-
+<main id="main" class="site-main" role="main">
+<article>
+<header class="entry-header">
+<h1 class="entry-title">
+Значения татуировок птиц
+</h1>
+</header>
+<div class="entry-content">
 <?php if ( have_posts() ) : ?>
-
-			
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -47,8 +40,9 @@
 
 			<?php get_template_part( 'content', 'none' ); ?>
 
-		<?php endif; ?>
-
+<?php endif; ?>
+</div>
+	</article>
 	</main>
 </section>
 <?php get_sidebar(); ?>
