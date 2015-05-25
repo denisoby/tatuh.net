@@ -23,12 +23,7 @@ if ( post_password_required() ) {
 	<?php // You can start editing here -- including this comment! ?>
 
 	<?php if ( have_comments() ) : ?>
-		<div class="comments-title"><h2>
-			<?php
-				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'semplicemente' ),
-					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
-			?>
-		</h2></div>
+		<div class="comments-title"><h2>Комментарии:</h2></div>
 
 		<ol class="comment-list">
 			<?php
@@ -36,14 +31,13 @@ if ( post_password_required() ) {
 					'style'      => 'ol',
 					'short_ping' => true,
 					'avatar_size' => '70',
-					'reply_text'        =>  '<small>' .__( 'Reply'  , 'semplicemente' ) . '<i class="fa fa-level-down spaceLeft"></i></small>',
+					'reply_text'        =>  '<small>' .__( 'Ответить'  , 'semplicemente' ) . '<i class="fa fa-level-down spaceLeft"></i></small>',
 				) );
 			?>
 		</ol><!-- .comment-list -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'semplicemente' ); ?></h1>
 			<div class="nav-previous"><?php previous_comments_link( __( '<i class="fa spaceRight fa-angle-double-left"></i>Older Comments', 'semplicemente' ) ); ?></div>
 			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments<i class="fa spaceLeft fa-angle-double-right"></i>', 'semplicemente' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
@@ -75,7 +69,7 @@ if ( post_password_required() ) {
 		'must_log_in' => '<p class="must-log-in">' .  sprintf( __( 'Вы должны быть <a href="%s">авторизованы</a> чтобы комментировать.' , 'semplicemente' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
 		'logged_in_as' => '<p class="logged-in-as">' . sprintf( __( 'Ваш логин: <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Выйти?</a>'  , 'semplicemente' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
 		'comment_notes_before' => '<p class="comment-notes">' . __( 'Ваш email не будет виден никому.'  , 'semplicemente' ) . ( $req ? $required_text : '' ) . '</p>',
-		'title_reply' => __( 'Ответить'  , 'semplicemente' ),
+		'title_reply' => __( 'Комментировать'  , 'semplicemente' ),
 		'title_reply_to' => __( 'Ответить для %s'  , 'semplicemente' ),
 		'cancel_reply_link' => __( 'Отмена ответа'  , 'semplicemente' ) . '<i class="fa fa-times spaceLeft"></i>',
 		'label_submit' => __( 'Послать'  , 'semplicemente' ),

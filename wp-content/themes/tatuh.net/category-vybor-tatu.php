@@ -11,14 +11,13 @@
 <h1 class="entry-title">
 Выбор тату
 </h1>
-<div class="header-links">
-<a href="/vybor-tatu/dlya-devushek">
-<span class="label-link label-main">для девушек</span>
-</a>
-</div>
 </header>
 <div class="entry-content">
-
+<div class="img-overlay">
+<a href=/znacheniya-tatuirovok/ptitsy><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/woman.jpg" />
+<span>Для девушек</span>
+</a>
+</div>
 </div>
 	</article>
 	</main>

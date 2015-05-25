@@ -21,11 +21,11 @@ function semplicemente_paging_nav() {
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( '<span class="meta-nav"><i class="fa spaceRight fa-angle-double-left"></i></span>'. __('Older Posts', 'semplicemente') ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( '<span class="meta-nav"><i class="fa spaceRight fa-angle-double-left"></i></span>'. __('Предыдущие записи', 'semplicemente') ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'semplicemente') . '<span class="meta-nav"><i class="fa spaceLeft fa-angle-double-right"></i></span>' ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Следующие записи', 'semplicemente') . '<span class="meta-nav"><i class="fa spaceLeft fa-angle-double-right"></i></span>' ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -48,11 +48,10 @@ function semplicemente_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'semplicemente' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav" aria-hidden="true"><i class="fa spaceRight fa-angle-double-left"></i></span>&nbsp;%title' . '<span class="screen-reader-text">' . __( 'Previous post:', 'semplicemente' ) . '</span> ' );
-				next_post_link( '<div class="nav-next">%link</div>', '%title&nbsp;<span class="meta-nav" aria-hidden="true"><i class="fa spaceLeft fa-angle-double-right"></i></span>' . '<span class="screen-reader-text">' . __( 'Next Post:', 'semplicemente' ) . '</span> ' );
+				previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav" aria-hidden="true"><i class="fa spaceRight fa-angle-double-left"></i></span>&nbsp;%title');
+				next_post_link( '<div class="nav-next">%link</div>', '%title&nbsp;<span class="meta-nav" aria-hidden="true"><i class="fa spaceLeft fa-angle-double-right"></i></span>');
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->

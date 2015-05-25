@@ -18,6 +18,21 @@
 <span>Птицы</span>
 </a>
 </div>
+<div class="img-overlay">
+<a href=/znacheniya-tatuirovok/ptitsy><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/meanings/birds/bird-thumb.jpg" />
+<span>Птицы</span>
+</a>
+</div>
+<div class="img-overlay">
+<a href=/znacheniya-tatuirovok/ptitsy><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/meanings/birds/bird-thumb.jpg" />
+<span>Птицы</span>
+</a>
+</div>
+<div class="img-overlay">
+<a href=/znacheniya-tatuirovok/ptitsy><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/meanings/birds/bird-thumb.jpg" />
+<span>Птицы</span>
+</a>
+</div>
 
 </div>
 	</article>

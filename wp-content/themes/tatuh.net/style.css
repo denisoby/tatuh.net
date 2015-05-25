@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	color: #fff;
 }
-h1 {font-size: 30px; line-height: 36px}
+h1 {font-size: 36px; line-height: 36px}
 h2 {font-size: 24px; padding-bottom: 1.5em;}
 h3 {font-size: 20px;}
 h4 {font-size: 18px;}
@@ -519,18 +519,13 @@ a:active {
 	.main-small-navigation .menu a {
 	}
 }
-.site-main .comment-navigation,
-.site-main .paging-navigation,
-.site-main .post-navigation,
-.comments-title {
-	margin: 0 0 1.5em;
-	overflow: hidden;
-}
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
 	float: left;
+	text-align: left;
 	width: 50%;
+	padding: 1.5em 0;
 }
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
@@ -538,6 +533,7 @@ a:active {
 	float: right;
 	text-align: right;
 	width: 50%;
+	padding: 1.5em 0;
 }
 
 /*--------------------------------------------------------------
@@ -782,32 +778,6 @@ h2.site-description {
 .top-search.active {
 	color: #74bec5;
 }
-.nav-links, .comments-title {
-	border: 1px solid rgba(0,0,0,.1);
-	border-bottom: 2px solid rgba(0,0,0,.1);
-	border-radius: 4px;
-}
-.paging-navigation .nav-links, .comments-title {
-	padding: 1.5em;
-}
-.nav-next {
-	float: right;
-}
-.nav-previous {
-	float: left;
-}
-.post-navigation .nav-previous {
-	width: 50%;
-	padding: 1.5em;
-	float: left;
-}
-.post-navigation .nav-next {
-	width: 50%;
-	text-align: right;
-	padding: 1.5em;
-	border-left: 1px solid rgba(0,0,0,.1);
-	float: right;
-}
 .page-content {
 
 }
@@ -866,31 +836,7 @@ h2.site-description {
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
-.comment-content a {
-	word-wrap: break-word;
-}
-#comments ol {
-	list-style-type: none;
-	margin: 0px;
-}
-#comments ol article, .comment-respond {
-	border-bottom: 2px solid rgba(0,0,0,.1);
-	border: 1px solid rgba(0,0,0,.1);
-	padding: 1.5em;
-	margin: 0 0 1.5em;
-}
-#comments ol ol {
-	padding-left: 5%;
-}
-#comments article footer img {
-	float: left;
-	margin-right: 15px;
-	border: 2px solid rgba(0,0,0,.1);
-}
-#comments article .comment-content {
-	clear: both;
-	padding-top: 15px;
-}
+
 #comments .reply {
 	text-align: right;
 }
@@ -899,8 +845,6 @@ h2.site-description {
 }
 .site-main .comment-navigation, .no-comments {
 	background: #ffffff;
-	border-bottom: 2px solid rgba(0,0,0,.1);
-	border: 1px solid rgba(0,0,0,.1);
 	padding: 1.5em;
 }
 /*--------------------------------------------------------------
