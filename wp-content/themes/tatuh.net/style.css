@@ -647,11 +647,6 @@ header.entry-header:after {
 	padding-bottom: 12px;
 }
 
-aside ul li ul.sub-menu, aside ul li ul.children {
-	padding-top: 1em;
-	padding-left: 1em;
-}
-
 
 /*--------------------------------------------------------------
 10.0 Content
@@ -661,7 +656,7 @@ aside ul li ul.sub-menu, aside ul li ul.children {
 	margin: 0px auto;
 }
 header.site-header {
-	margin: 30px 0;
+	margin: 1em 0;
 }
 .content-area {
 	width: 75%;
@@ -703,16 +698,7 @@ span.overlay-img {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 }
-ul {
-	list-style: none;
-}
-li {
-	padding-bottom: 1em;
-}
-aside li:before {
-    	content: "• ";
-    	color: #FF482A;
-}
+
 h1.site-title {
 	font-family: "Georgia",​sans-serif;
 	text-transform: uppercase;

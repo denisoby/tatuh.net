@@ -17,35 +17,21 @@
 <h1 class="entry-title">
 Подбор татуировки для девушек
 </h1>
-<div class="header-links">
-<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek">
-<span class="label-link label-main">рука</span>
-</a>
-<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-na-ladoni.html">
-<span class="label-link label-main">ладонь</span>
-</a>
-<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-na-zapyaste-dlya-devushki.html">
-<span class="label-link label-main">запястье</span>
-</a>
-<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-na-lokte-dlya-devushek.html">
-<span class="label-link label-main">локоть</span>
-</a>
-<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-dlya-devushek-na-pleche-i-predpleche.html">
-<span class="label-link label-main">плечо</span>
-</a>
-<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatuirovki-dlya-devushek-na-pleche-i-predpleche.html">
-<span class="label-link label-main">предплечье</span>
-</a>
-<a href="dlya-devushek/tatuirovki-na-ruke-dlya-devushek/tatu-rukava-dlya-devushek.html">
-<span class="label-link label-main">рукава</span>
-</a>
-</div>
 </header>
 <div class="entry-content">
-
+<div class="img-overlay">
+<a href=dlya-devushek/na-ruke><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/hand.jpg" />
+<span>На руке</span>
+</a>
 </div>
-	</article>
-	</main>
+<div class="img-overlay">
+<a href="dlya-devushek/intimnye/tatu-na-intimnyh-mestah-zhenskie.html"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/intimate-thumb.jpg" />
+<span>Интимные</span>
+</a>
+</div>
+</div>
+</article>
+</main>
 </section>
 <?php get_sidebar(); ?>
 

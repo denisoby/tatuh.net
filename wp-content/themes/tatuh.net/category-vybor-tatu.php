@@ -13,8 +13,11 @@
 </h1>
 </header>
 <div class="entry-content">
+Если есть желание сделать тату, но место никак не определится, лучше воспользоваться помощью мастера в салоне. Он определит, подойдёт ли к вашему образу татуировка на данном месте, может предложить задействовать другую часть тела, создать маленький шедевр или большое живописное полотно - в общем, избавит от проблемы самостоятельного выбора. Главное, не бояться, выбрать крутого мастера и не жалеть о сделанном!
+<br>
+<br>
 <div class="img-overlay">
-<a href=/znacheniya-tatuirovok/ptitsy><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/woman.jpg" />
+<a href=vybor-tatu/dlya-devushek><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/woman.jpg" />
 <span>Для девушек</span>
 </a>
 </div>
