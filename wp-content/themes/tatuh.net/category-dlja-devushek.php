@@ -19,13 +19,18 @@
 </h1>
 </header>
 <div class="entry-content">
-<div class="img-overlay">
-<a href=dlya-devushek/na-ruke><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/hand.jpg" />
+<div class="img-overlay img-overlay-three">
+<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-ruke"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/hand.jpg" />
 <span>На руке</span>
 </a>
 </div>
-<div class="img-overlay">
-<a href="dlya-devushek/intimnye/tatu-na-intimnyh-mestah-zhenskie.html"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/intimate-thumb.jpg" />
+<div class="img-overlay img-overlay-three">
+<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-noge"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/leg-thumb.jpg" />
+<span>На ноге</span>
+</a>
+</div>
+<div class="img-overlay img-overlay-three">
+<a href="http://tatuh.net/vybor-tatu/dlya-devushek/intimnye/tatu-na-intimnyh-mestah-zhenskie.html"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/intimate-thumb.jpg" />
 <span>Интимные</span>
 </a>
 </div>

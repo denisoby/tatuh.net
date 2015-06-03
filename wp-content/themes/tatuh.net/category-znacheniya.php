@@ -14,7 +14,7 @@
 </header>
 <div class="entry-content">
 <div class="img-overlay">
-<a href=/znacheniya-tatuirovok/ptitsy><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/meanings/birds/bird-thumb.jpg" />
+<a href="http://tatuh.net/znacheniya-tatuirovok/ptitsy"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/meanings/birds/bird-thumb.jpg" />
 <span>Птицы</span>
 </a>
 </div>

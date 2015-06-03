@@ -130,4 +130,4 @@ function semplicemente_custom_css_styles() {
 </style>
     <?php
 }
-add_action('wp_head', 'semplicemente_custom_css_styles');
+

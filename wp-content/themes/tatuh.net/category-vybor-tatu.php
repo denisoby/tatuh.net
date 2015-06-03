@@ -17,7 +17,7 @@
 <br>
 <br>
 <div class="img-overlay">
-<a href=vybor-tatu/dlya-devushek><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/woman.jpg" />
+<a href="http://tatuh.net/vybor-tatu/dlya-devushek"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/woman.jpg" />
 <span>Для девушек</span>
 </a>
 </div>

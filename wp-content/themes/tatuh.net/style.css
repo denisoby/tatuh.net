@@ -667,16 +667,15 @@ header.site-header {
 	width: 25%;
 	float:left;
 	padding-right: 1.5em;
-}
-header.entry-header {
-	padding: 1.5em 0 0;
+	padding-bottom: 1.5em;
 }
 header.page-header {
 	font-weight: 700;
 	padding: 1.5em 0;
 }
-header.page-header h1 span {
-	letter-spacing: -1px;
+header.entry-header {
+	font-weight: 700;
+	padding: 1.5em 0 0;
 }
 header.entry-header .entry-title {
 	margin-bottom: 0.5em;

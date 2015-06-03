@@ -12,22 +12,11 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'semplicemente' ); ?></h1>
+					<h1 class="page-title"><?php _e( 'Ошибка 404', 'semplicemente' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'semplicemente' ); ?></p>
-
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-					<?php
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'semplicemente' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
-
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-
+					<p><?php _e( 'Запрашиваемая страница не существует', 'semplicemente' ); ?></p>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 

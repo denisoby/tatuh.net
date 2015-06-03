@@ -14,6 +14,10 @@ if ( ! function_exists( 'semplicemente_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function semplicemente_setup() {
+	
+	remove_action('wp_head', 'rsd_link');
+	remove_action('wp_head', 'wlwmanifest_link');
+	remove_action('wp_head', 'wp_generator');
 
 	/**
 	 * Set the content width based on the theme's design and stylesheet.
@@ -30,9 +34,6 @@ function semplicemente_setup() {
 	 * to change 'semplicemente' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'semplicemente', get_template_directory() . '/languages' );
-
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
 	
 	/*
 	 * Let WordPress manage the document title.
@@ -89,6 +90,17 @@ function semplicemente_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'semplicemente_widgets_init' );
+
+//Making jQuery to load from Google Library
+function replace_jquery() {
+	if (!is_admin()) {
+		// comment out the next two lines to load the local copy of jQuery
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js', false, '1.11.2');
+		wp_enqueue_script('jquery');
+	}
+}
+add_action('init', 'replace_jquery');
 
 /**
  * Enqueue scripts and styles.
