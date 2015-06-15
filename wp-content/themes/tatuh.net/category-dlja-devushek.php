@@ -34,6 +34,21 @@
 <span>Интимные</span>
 </a>
 </div>
+<div class="img-overlay img-overlay-three">
+<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-golove"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/golova/golova-thumb.jpg" />
+<span>На голове</span>
+</a>
+</div>
+<div class="img-overlay img-overlay-three">
+<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-spine"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/spina/spina-thumb.jpg" />
+<span>На спине</span>
+</a>
+</div>
+<div class="img-overlay img-overlay-three">
+<a href="http://tatuh.net/vybor-tatu/dlya-devushek/speredi"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/jivot/jivot-thumb.jpg" />
+<span>Спереди</span>
+</a>
+</div>
 </div>
 </article>
 </main>

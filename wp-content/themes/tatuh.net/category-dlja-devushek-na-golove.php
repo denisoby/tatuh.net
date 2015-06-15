@@ -29,9 +29,6 @@
 </a>
 </div>
 </header>
-<div class="entry-content">
-Text?
-</div>
 </article>
 <br>
 <?php if ( have_posts() ) : ?>

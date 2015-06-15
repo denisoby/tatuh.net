@@ -5,6 +5,7 @@
 ?>
 
 <div class="header-links">
+
 <?php
 
 $categories = get_the_category();
@@ -15,8 +16,10 @@ $args = array( 'category' => $category_id);
 $myposts = get_posts( $args );
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 
-<?php if(get_post_meta($post->ID, "label-name", true)) : ?>
-		<a href="<?php the_permalink(); ?>"><span class="label-link label-main"><?php echo get_post_meta($post->ID, "label-name", true); ?></span></a>
+<?php 
+$labelName = get_post_meta($post->ID, "label-name", true);
+if($labelName) : ?>
+		<a href="<?php the_permalink(); ?>"><span class="label-link label-main"><?php echo $labelName; ?></span></a>
 <?php endif; ?>
 
 <?php endforeach;
@@ -38,15 +41,4 @@ wp_reset_postdata();
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-<div class="entry-meta">
-<?php semplicemente_posted_on(); ?>
-<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-<span class="comments-link"><i class="fa fa-comments-o spaceRight"></i><?php comments_popup_link( __( 'Комментировать', 'semplicemente' ), __( '1 Комментарий', 'semplicemente' ), __( '% Комментариев', 'semplicemente' ) ); ?></span>
-<?php endif; ?>
-</div><!-- .entry-meta -->
-
-<?php edit_post_link( __( 'Edit', 'semplicemente' ), '<span class="edit-link"><i class="fa fa-pencil-square-o spaceRight"></i>', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
