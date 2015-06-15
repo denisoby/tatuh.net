@@ -276,8 +276,7 @@ class BWGViewThumbnails {
       /*pagination styles*/
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .tablenav-pages_<?php echo $bwg; ?> {
         text-align: <?php echo $theme_row->page_nav_align; ?>;
-        font-size: <?php echo $theme_row->page_nav_font_size; ?>px;
-        font-family: <?php echo $theme_row->page_nav_font_style; ?>;
+        font-size: 18px;
         font-weight: <?php echo $theme_row->page_nav_font_weight; ?>;
         color: #<?php echo $theme_row->page_nav_font_color; ?>;
         margin: 6px 0 4px;
@@ -298,13 +297,6 @@ class BWGViewThumbnails {
         margin-right: 10px;
         vertical-align: middle;
       }
-      #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .paging-input_<?php echo $bwg; ?> {
-        font-size: <?php echo $theme_row->page_nav_font_size; ?>px;
-        font-family: <?php echo $theme_row->page_nav_font_style; ?>;
-        font-weight: <?php echo $theme_row->page_nav_font_weight; ?>;
-        color: #<?php echo $theme_row->page_nav_font_color; ?>;
-        vertical-align: middle;
-      }
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .tablenav-pages_<?php echo $bwg; ?> a.disabled,
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .tablenav-pages_<?php echo $bwg; ?> a.disabled:hover,
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .tablenav-pages_<?php echo $bwg; ?> a.disabled:focus {
@@ -313,22 +305,12 @@ class BWGViewThumbnails {
       }
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .tablenav-pages_<?php echo $bwg; ?> a {
         cursor: pointer;
-        font-size: <?php echo $theme_row->page_nav_font_size; ?>px;
-        font-family: <?php echo $theme_row->page_nav_font_style; ?>;
+        font-size: 18px;
         font-weight: <?php echo $theme_row->page_nav_font_weight; ?>;
-        color: #<?php echo $theme_row->page_nav_font_color; ?>;
+        color: #fff;
         text-decoration: none;
         padding: <?php echo $theme_row->page_nav_padding; ?>;
         margin: <?php echo $theme_row->page_nav_margin; ?>;
-        border-radius: <?php echo $theme_row->page_nav_border_radius; ?>;
-        border-style: <?php echo $theme_row->page_nav_border_style; ?>;
-        border-width: <?php echo $theme_row->page_nav_border_width; ?>px;
-        border-color: #<?php echo $theme_row->page_nav_border_color; ?>;
-        background-color: #<?php echo $theme_row->page_nav_button_bg_color; ?>;
-        opacity: <?php echo number_format($theme_row->page_nav_button_bg_transparent / 100, 2, ".", ""); ?>;
-        filter: Alpha(opacity=<?php echo $theme_row->page_nav_button_bg_transparent; ?>);
-        box-shadow: <?php echo $theme_row->page_nav_box_shadow; ?>;
-        <?php echo ($theme_row->page_nav_button_transition ) ? 'transition: all 0.3s ease 0s;-webkit-transition: all 0.3s ease 0s;' : ''; ?>
       }
       #bwg_container1_<?php echo $bwg; ?> #bwg_container2_<?php echo $bwg; ?> .bwg_back_<?php echo $bwg; ?> {
         background-color: rgba(0, 0, 0, 0);

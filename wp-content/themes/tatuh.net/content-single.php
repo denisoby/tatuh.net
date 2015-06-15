@@ -3,6 +3,27 @@
  * @package semplicemente
  */
 ?>
+
+<div class="header-links">
+<?php
+
+$categories = get_the_category();
+$category_id = $categories[0]->cat_ID;
+
+$args = array( 'category' => $category_id);
+
+$myposts = get_posts( $args );
+foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+
+<?php if(get_post_meta($post->ID, "label-name", true)) : ?>
+		<a href="<?php the_permalink(); ?>"><span class="label-link label-main"><?php echo get_post_meta($post->ID, "label-name", true); ?></span></a>
+<?php endif; ?>
+
+<?php endforeach;
+wp_reset_postdata();
+?>
+</div>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

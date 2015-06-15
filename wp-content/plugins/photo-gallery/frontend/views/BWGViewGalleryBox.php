@@ -193,14 +193,14 @@ class BWGViewGalleryBox {
       }
       .bwg_ctrl_btn {
         color: #<?php echo $theme_row->lightbox_ctrl_btn_color; ?>;
-        font-size: <?php echo $theme_row->lightbox_ctrl_btn_height; ?>px;
+        font-size: 30px;
         margin: <?php echo $theme_row->lightbox_ctrl_btn_margin_top; ?>px <?php echo $theme_row->lightbox_ctrl_btn_margin_left; ?>px;
         opacity: <?php echo  number_format($theme_row->lightbox_ctrl_btn_transparent / 100, 2, ".", ""); ?>;
         filter: Alpha(opacity=<?php echo $theme_row->lightbox_ctrl_btn_transparent; ?>);
       }
       .bwg_toggle_btn {
         color: #<?php echo $theme_row->lightbox_ctrl_btn_color; ?>;
-        font-size: <?php echo $theme_row->lightbox_toggle_btn_height; ?>px;
+        font-size: 30px;
         margin: 0;
         opacity: <?php echo number_format($theme_row->lightbox_ctrl_btn_transparent / 100, 2, ".", ""); ?>;
         filter: Alpha(opacity=<?php echo $theme_row->lightbox_ctrl_btn_transparent; ?>);
@@ -266,6 +266,7 @@ class BWGViewGalleryBox {
         z-index: 10150;
       }
       .bwg_close_btn {
+	font-size: 30px;
         opacity: <?php echo number_format($theme_row->lightbox_close_btn_transparent / 100, 2, ".", ""); ?>;
         filter: Alpha(opacity=<?php echo $theme_row->lightbox_close_btn_transparent; ?>);
       }
@@ -276,14 +277,14 @@ class BWGViewGalleryBox {
         box-shadow: <?php echo $theme_row->lightbox_close_btn_box_shadow; ?>;
         color: #<?php echo $theme_row->lightbox_close_btn_color; ?>;
         height: <?php echo $theme_row->lightbox_close_btn_height; ?>px;
-        font-size: <?php echo $theme_row->lightbox_close_btn_size; ?>px;
+        font-size: 30px;
         right: <?php echo $theme_row->lightbox_close_btn_right; ?>px;
         top: <?php echo $theme_row->lightbox_close_btn_top; ?>px;
         width: <?php echo $theme_row->lightbox_close_btn_width; ?>px;
       }
       .spider_popup_close_fullscreen {
         color: #<?php echo $theme_row->lightbox_close_btn_full_color; ?>;
-        font-size: <?php echo $theme_row->lightbox_close_btn_size; ?>px;
+        font-size: 30px;
         right: 15px;
       }
       .spider_popup_close span,
@@ -301,7 +302,7 @@ class BWGViewGalleryBox {
         box-shadow: <?php echo $theme_row->lightbox_rl_btn_box_shadow; ?>;
         color: #<?php echo $theme_row->lightbox_rl_btn_color; ?>;
         height: <?php echo $theme_row->lightbox_rl_btn_height; ?>px;
-        font-size: <?php echo $theme_row->lightbox_rl_btn_size; ?>px;
+        font-size: 30px;
         width: <?php echo $theme_row->lightbox_rl_btn_width; ?>px;
         opacity: <?php echo number_format($theme_row->lightbox_rl_btn_transparent / 100, 2, ".", ""); ?>;
         filter: Alpha(opacity=<?php echo $theme_row->lightbox_rl_btn_transparent; ?>);

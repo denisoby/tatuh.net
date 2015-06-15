@@ -28,10 +28,7 @@
 <span class="label-link label-main">икры</span>
 </a>
 <a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-noge/na-stupne.html">
-<span class="label-link label-main">щиколотка</span>
-</a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-noge/na-stupne.html">
-<span class="label-link label-main">ступня</span>
+<span class="label-link label-main">ступня и щиколотка</span>
 </a>
 </div>
 </header>
