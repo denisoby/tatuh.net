@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/uploads/
+Disallow: /wp-content/themes/tatuh.net/images/

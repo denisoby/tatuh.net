@@ -13,6 +13,45 @@ if ( ! function_exists( 'semplicemente_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+
+function pagination($pages = '', $range = 4)
+{  
+     $showitems = ($range * 2)+1;  
+
+     global $paged;
+     if(empty($paged)) $paged = 1;
+
+     if($pages == '')
+     {
+         global $wp_query;
+         $pages = $wp_query->max_num_pages;
+         if(!$pages)
+         {
+             $pages = 1;
+         }
+     }   
+
+     if(1 != $pages)
+     {
+         echo "<div class=\"pagination\"><span>Страница ".$paged." из ".$pages."</span>";
+//         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
+//         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Назад</a>";
+
+	if($paged > 1) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Назад</a>";
+         for ($i=1; $i <= $pages; $i++)
+         {
+             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+             {
+                 echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
+             }
+         }
+         if ($paged < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">Далее &rsaquo;</a>";  
+//         if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">Next &rsaquo;</a>";  
+         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
+         echo "</div>\n";
+     }
+}
+
 function semplicemente_setup() {
 	
 	remove_action('wp_head', 'rsd_link');

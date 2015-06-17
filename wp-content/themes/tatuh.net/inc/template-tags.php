@@ -19,15 +19,9 @@ function semplicemente_paging_nav() {
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
 		<div class="nav-links">
-
-			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( '<span class="meta-nav"><i class="fa spaceRight fa-angle-double-left"></i></span>'. __('Предыдущие записи', 'semplicemente') ); ?></div>
-			<?php endif; ?>
-
-			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Следующие записи', 'semplicemente') . '<span class="meta-nav"><i class="fa spaceLeft fa-angle-double-right"></i></span>' ); ?></div>
-			<?php endif; ?>
-
+<?php if (function_exists("pagination")) {
+    pagination($additional_loop->max_num_pages);
+} ?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
 	<?php
