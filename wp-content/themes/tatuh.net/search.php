@@ -5,7 +5,8 @@
  * @package semplicemente
  */
 
-get_header(); ?>
+get_header();
+?>
 
 <section class="content-area">
     <main id="main" class="site-main" role="main">

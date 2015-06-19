@@ -8,18 +8,18 @@
  */
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<?php
-				$name = get_bloginfo('name');
-				$url = home_url('/');
-				$year = date('Y');
-			?>
-			&copy; <?php echo $year ?> <?php echo $name ?>		
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-info">
+        <?php
+        $name = get_bloginfo('name');
+        $url = home_url('/');
+        $year = date('Y');
+        ?>
+        &copy; <?php echo $year ?> <?php echo $name ?>
+    </div>
+</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
