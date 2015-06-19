@@ -91,11 +91,10 @@
             <button class="menu-toggle"><?php _e('Menu', 'semplicemente'); ?><i class="fa fa-align-justify"></i>
             </button>
             <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
-            <a href="#" class="top-search">&nbsp;</a>
-            <?php if (!$se_options['hidesearch']) : ?>
-                <i class="fa spaceLeftDouble fa-search"></i>
+            <?php if (! $se_options['hidesearch']) : ?>
+                <a href="#" class="top-search"><i class="fa spaceLeftDouble fa-search"></i></a>
             <?php endif; ?>
-            <?php if (!$se_options['hidesearch']) : ?>
+            <?php if (! $se_options['hidesearch']) : ?>
                 <div class="topSearchForm">
                     <?php get_search_form(); ?>
                 </div>

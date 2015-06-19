@@ -22,7 +22,7 @@ define('DB_NAME', 'wordpress');
 define('DB_USER', 'wpuser');
 
 /** Пароль к базе данных MySQL */
-define('DB_PASSWORD', '777777');
+define('DB_PASSWORD', 'jh#8HF4$SuSC');
 
 /** Имя сервера MySQL */
 define('DB_HOST', 'localhost');
