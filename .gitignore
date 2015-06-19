@@ -1,2 +1,6 @@
 wp-content/uploads
 wp-content/themes/tatuh.net/images
+
+.idea
+*.iml
+
