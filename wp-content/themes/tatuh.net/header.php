@@ -19,6 +19,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
     <![endif]-->
     <?php wp_head(); ?>
+    <meta name="google-site-verification" content="GgkEEdWr8YF5fB4ORcLDBNikyK4hcdB_x8Rjjl4S6FY" />
 </head>
 
 <body <?php body_class(); ?>>
