@@ -24,6 +24,6 @@ echo '</a>';
 				'after'  => '</div>',
 			) );
 		?>
-<a class="readMoreLink" href="<?php echo get_permalink(); ?>"><?php _e('Читать дальше', 'semplicemente') ?><i class="fa spaceLeft fa-angle-double-right"></i></a>
+		<a class="readMoreLink" href="<?php echo get_permalink(); ?>"><?php _e('Читать дальше', 'semplicemente') ?><i class="fa spaceLeft fa-angle-double-right"></i></a>
 </div><!-- .entry-content -->
 </article><!-- #post-## -->

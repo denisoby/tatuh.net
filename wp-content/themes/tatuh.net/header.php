@@ -89,7 +89,7 @@
     </header>
     <div class="tatuh_top_nav">
         <nav id="site-navigation" class="main-navigation" role="navigation">
-            <button class="menu-toggle"><?php _e('Menu', 'semplicemente'); ?><i class="fa fa-align-justify"></i>
+            <button class="menu-toggle">Меню<i class="fa fa-align-justify"></i>
             </button>
             <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
             <?php if (! $se_options['hidesearch']) : ?>

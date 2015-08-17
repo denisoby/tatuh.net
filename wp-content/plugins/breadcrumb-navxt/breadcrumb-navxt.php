@@ -437,3 +437,23 @@ function bcn_display_list($return = false, $linked = true, $reverse = false)
 		return $breadcrumb_navxt->display_list($return, $linked, $reverse);
 	}
 }
+
+add_action('bcn_after_fill', 'bcnext_remove_current_item');
+/**
+ * We're going to pop off the paged breadcrumb and add in our own thing 
+ *
+ * @param bcn_breadcrumb_trail $trail the breadcrumb_trail object after it has been filled
+ */
+function bcnext_remove_current_item($trail)
+{
+	//Make sure we have a type
+	if(isset($trail->breadcrumbs[0]->type) && is_array($trail->breadcrumbs[0]->type) && isset($trail->breadcrumbs[0]->type[1]))
+	{
+		//Check if we have a current item
+		if(in_array('current-item', $trail->breadcrumbs[0]->type))
+		{
+			//Shift the current item off the front
+			array_shift($trail->breadcrumbs);
+		}
+	}
+}
