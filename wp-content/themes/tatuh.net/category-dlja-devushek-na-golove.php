@@ -30,7 +30,6 @@
 </div>
 </header>
 </article>
-<br>
 <?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>

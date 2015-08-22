@@ -461,62 +461,7 @@ a:active {
 .menu-toggle {
 	display: none;
 }
-@media screen and (max-width: 768px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-		width: 100%;
 
-		background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #343434 0%, #1e1e1e 100%) repeat scroll 0 0;
-		color: #ffffff;
-		text-align: left;
-		float:left;
-		padding: 1em;
-	}
-	
-	.main-navigation.toggled .nav-menu ul {
-		display: block;
-		left: auto;
-		position: relative;
-		top: 0;
-		border-bottom: 0px;
-		padding-left: 5%;
-		background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #343434 0%, #1e1e1e 100%) repeat scroll 0 0;
-		width: 100%;
-		opacity: 1;
-		visibility: visible;
-	}
-	
-	.main-navigation.toggled ul ul a {
-		font-size: 100%;
-		width: 100%;
-	}
-	
-	.menu-toggle i {
-		float:right;
-	}
-
-	.main-navigation ul {
-		display: none;
-	}
-	
-	.main-navigation li {
-		width: 100%;
-	}
-	
-	.main-navigation a {
-		padding: .5em;
-		color: #ffffff;
-
-	}
-	
-	.main-navigation a:hover {
-		color: #ffffff;
-	}
-	
-	.main-small-navigation .menu a {
-	}
-}
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -950,24 +895,27 @@ object {
 	.posted-on, . ink, .cat-links, .entry-format {
 		display: block;
 	}
-	h1 {font-size: 22px;line-height:1.5rem;}
-	h2 {font-size: 20px;line-height:1.5rem;}
+	h1 {font-size: 21px;line-height:1.5rem;}
+	h2 {font-size: 19px;line-height:1.5rem;}
 	h3 {font-size: 16px;line-height:1.5rem;}
 	h4 {font-size: 13px;}
 	h5 {font-size: 10px;}
 	h6 {font-size: 8px;}
-	p {line-height:1.5rem;}
+	p {font-size: 12px; line-height:1rem;}
+	.ul-article-margin {font-size: 12px; line-height:1rem;}
+	.readMoreLink {font-size: 14px;}
 	.widget-title h3 {
 		padding: 5px 0;
 	}
-	.main-navigation a {
-		font-size: 22px;
-		line-height: 1.5rem;
+	.entry-content {
+		font-size: 12px;
 	}
 	.content-area {
 		width: 100%;
+	    	padding: 0 0.5em 0.5em;
 	}
 	.widget-area {
 		display: none;
 	}
+	div.breadcrumbs {margin: 0 0.5em;}
 }

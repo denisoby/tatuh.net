@@ -1,0 +1,246 @@
+.pagination {
+padding:20px 0;
+position:relative;
+font-size:18px;
+}
+.pagination span, .pagination a {
+display:inline-block;
+margin: 2px 2px 2px 0;
+padding:6px 9px 5px 9px;
+text-decoration:none;
+width:auto;
+color:#fff;
+background: #818181;
+}
+.pagination a:hover{
+color:#fff;
+background: #FF482A;
+}
+.pagination .current{
+padding:6px 9px 5px 9px;
+background: #FF482A;
+color:#fff;
+}
+
+.article-contents {
+	background-color: rgba(0,0,0,0.35);
+  	padding: 1em;
+  	margin: 1em;
+}
+.article-contents a {
+	font-weight: 400;
+  	color: #818181;
+}
+.article-note {
+  	color: #fff;
+	background-color: rgba(0,0,0,0.35);
+  	padding: 1em;
+  	margin: 1em;
+  	border-left: 3px solid #FF482A;
+}
+.article-to-top {
+  	color: #FF482A;
+	font-weight: 400;
+  	font-size: 16px;
+}
+ul {
+	list-style: none;
+}
+li {
+	padding-top: 1em;
+}
+aside li:before {
+    content: "• ";
+    color: #FF482A;
+}
+ul.children li {
+  	padding-left: 1.5em;
+}
+ul.menu li {
+	padding:0 ;
+}
+.ul-article-margin li{
+  	padding-top: 0;
+  	padding-bottom: 1em;
+	padding-left: 1.5em;
+}
+.ul-article-margin li:before {
+    	content: "• ";
+    	color: #FF482A;
+}
+.img-overlay {
+  	float: left;
+    position: relative;
+}
+.img-overlay-three {
+  	padding-right: 1em;
+	width: 33%;
+}
+.img-overlay span {
+  	background-color: #FF482A;
+  	font-size: 30px;
+    position: absolute;
+  	left: 20px;
+  	bottom: 20px;
+  	padding: 0 1em;
+}
+
+
+@media all and (max-width: 1180px) {
+  	.img-overlay-three {
+		width: 50%;
+	}
+  	.img-overlay span {
+		font-size: 28px;
+        padding: 0 0.5em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  	.label-link.label-main {
+    	font-size: 14px;
+  	}
+  	.tatuh_top_nav {
+    	display: none;
+  	}
+}
+@media all and (max-width: 479px) {
+  	.img-overlay-three {
+		width: 100%;
+	}  
+}
+.comment-author {
+	color: #FF482A;
+}
+.comment-author b {
+	color: #FF482A;
+}
+.comment-metadata a {
+	font-weight: 400;  	
+}
+.comment-list {
+	list-style: none;
+}
+.comment-list li {
+	padding: 0;
+}
+.comment-list li article{
+	border-bottom: 1px solid #898989;
+	padding: 1.5em 0;
+}
+.comments-area {
+	margin-top: 5em;
+}
+.comment-content {
+	padding-top: 1.5em;
+}
+.comments-title h2 {
+	padding: 0;
+}
+ol.children {
+	list-style: none;
+  	padding-left: 5%;
+}
+.breadcrumbs {
+	color: #FF482A;
+  	font-size: 16px;
+  	border-bottom: 1px solid #222;
+    border-top: 1px solid #222;
+    padding: 5px 0;
+  	margin: 0 1.5em;
+}
+.breadcrumbs a {
+	font-weight: 400;
+}
+.thumbnail {
+  	margin: 5px 20px 10px 0;
+  	background-color: #898989;
+    border-radius: 4px;
+  	line-height: 0;
+  	padding: 4px;
+}
+.thumbnail-left {
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.thumbnail-right {
+  	margin: 5px 0px 10px 20px;
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+.label-link {
+    color: #fff;
+  	background-color: #ff482a;
+  	font-weight: 700;
+    display: inline;
+    line-height: 1;
+    padding: 0.2em 0.6em 0.3em;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+  	text-transform: uppercase;
+}
+.label-main {
+	font-size: 16px;
+}
+.header-links {
+	padding-top: 1.5em;
+}
+.header-links a {
+  	text-decoration: none
+}
+.site-content {
+  	background-color: rgba(18,18,18,0.9);
+}
+.widget a {
+  font-weight: 400;
+  color: #818181;
+  text-transform: none;
+}
+.widget a:hover {
+  font-weight: 400;
+  color: #636363;
+}
+.tatuh_top_nav{
+	background-color: rgba(18,18,18,0.9);
+	padding: 1.5em 0;
+}
+.entry-meta {
+	border-bottom: 1px solid #222;
+    border-top: 1px solid #222;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+.author a {
+	color: #FF482A;
+}
+.comments-link a {
+  	color: #898989;
+}
+.sub-menu {
+	padding: 20px 0;
+}
+.sub-menu a {
+  	letter-spacing: 0;
+  	color: #898989;
+    display: block;
+    font: 12px/30px Arial,"Helvetica Neue",Helvetica,sans-serif;
+    margin: 0;
+    padding: 0 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.sub-menu a:hover {
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #171717 0%, #2d2d2d 100%) repeat scroll 0 0;
+    border-bottom: 1px solid #404040;
+    color: #fff;
+    text-shadow: none;
+}
+.byline {
+	display: none;
+}
+.post-date {
+	color: #fff;
+}
