@@ -92,17 +92,29 @@ ul.menu li {
 	}
   	.img-overlay span {
 		font-size: 28px;
-        padding: 0 0.5em;
+        	padding: 0 0.5em;
 	}
 }
 
 @media screen and (max-width: 768px) {
   	.label-link.label-main {
-    	font-size: 14px;
+    		font-size: 14px;
   	}
-  	.tatuh_top_nav {
-    	display: none;
+  	.tatuh_top_nav, #masthead {
+    		display: none;
   	}
+	#wprmenu_bar {
+		height: 50px;
+		padding: 0.5em;
+	}
+	#wprmenu_bar .wprmenu_icon {
+		margin-top: 5px;
+		margin-right: 0;
+	}
+	#wprmenu_bar .bar_logo {
+		float: right;
+		height: 44px;
+	}
 }
 @media all and (max-width: 479px) {
   	.img-overlay-three {
