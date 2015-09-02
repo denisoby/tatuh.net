@@ -87,6 +87,8 @@
             <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img
                     src="/wp-content/themes/tatuh.net/images/header.png"></a>
         </div>
+	<div class="mobile-menu-line">
+	</div>
     </header>
     <div class="tatuh_top_nav">
         <nav id="site-navigation" class="main-navigation" role="navigation">

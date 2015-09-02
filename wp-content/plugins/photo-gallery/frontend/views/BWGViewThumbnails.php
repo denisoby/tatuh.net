@@ -344,6 +344,7 @@ class BWGViewThumbnails {
         margin: 0 auto;
       }
     </style>
+<noindex>
     <div id="bwg_container1_<?php echo $bwg; ?>">
       <div id="bwg_container2_<?php echo $bwg; ?>">
         <form id="gal_front_form_<?php echo $bwg; ?>" method="post" action="#">
@@ -470,6 +471,7 @@ class BWGViewThumbnails {
         <div id="spider_popup_overlay_<?php echo $bwg; ?>" class="spider_popup_overlay" onclick="spider_destroypopup(1000)"></div>
       </div>
     </div>
+</noindex>
     <script>
       <?php
         $params_array = array(

@@ -1,3 +1,29 @@
+.scroll-back-to-top-wrapper {
+    width: 100%;
+}
+
+#toc_container {
+  	padding: 1em;
+  	margin: 1em 0;
+	font-size: 18px;
+	width: 100%;
+}
+div#toc_container {
+	background-color: rgba(0,0,0,0.35);
+	border: none;
+}
+#toc_container p{
+	color: #fff;
+}
+#toc_container a {
+	font-weight: 400;
+  	color: #b2b2b2;
+}
+
+.mobile-menu-line {
+	display: none;
+}
+
 .pagination {
 padding:20px 0;
 position:relative;
@@ -29,7 +55,7 @@ color:#fff;
 }
 .article-contents a {
 	font-weight: 400;
-  	color: #818181;
+  	color: #b2b2b2;
 }
 .article-note {
   	color: #fff;
@@ -100,9 +126,12 @@ ul.menu li {
   	.label-link.label-main {
     		font-size: 14px;
   	}
-  	.tatuh_top_nav, #masthead {
+  	.tatuh_top_nav, .site-branding {
     		display: none;
   	}
+	.mobile-menu-line {
+		display: block;
+	}
 	#wprmenu_bar {
 		height: 50px;
 		padding: 0.5em;
@@ -208,7 +237,7 @@ ol.children {
 }
 .widget a {
   font-weight: 400;
-  color: #818181;
+  color: #b2b2b2;
   text-transform: none;
 }
 .widget a:hover {

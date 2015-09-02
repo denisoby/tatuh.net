@@ -41,7 +41,7 @@ function wprmenu_enqueue_scripts() {
 }
 
 function wpr_search_form() {
-	return '<form role="search" method="get" class="wpr-search-form" action="' . site_url() . '"><label><input type="search" class="wpr-search-field" placeholder="Search ..." value="" name="s" title="Search for:"></label></form>';
+	return '<form role="search" method="get" class="wpr-search-form" action="' . site_url() . '"><label><input type="search" class="wpr-search-field" placeholder="Поиск..." value="" name="s" title="Search for:"></label></form>';
 }
 
 add_action('wp_footer', 'wprmenu_menu', 100);
@@ -60,7 +60,6 @@ function wprmenu_menu() {
 				<?php if($options['bar_logo']) echo '<img class="bar_logo" src="'.$options['bar_logo'].'"/>' ?>
 			</div>
 		</div>
-
 		<div id="wprmenu_menu" class="wprmenu_levels <?php echo $options['position'] ?> wprmenu_custom_icons">
 			<?php if( $options['search_box'] == 'above_menu' ) { ?> 
 			<div class="wpr_search">
