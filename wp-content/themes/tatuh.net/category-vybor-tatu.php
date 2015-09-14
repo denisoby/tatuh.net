@@ -9,7 +9,7 @@
 <article>
 <header class="page-header">
 <h1 class="entry-title">
-Выбор тату
+Выбор места
 </h1>
 </header>
 <div class="entry-content">
@@ -22,8 +22,8 @@
 </a>
 </div>
 </div>
-	</article>
-	</main>
+</article>
+</main>
 </section>
 <?php get_sidebar(); ?>
 

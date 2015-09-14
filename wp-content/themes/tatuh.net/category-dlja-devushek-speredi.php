@@ -21,8 +21,8 @@
 <a href="http://tatuh.net/vybor-tatu/dlya-devushek/speredi/zhivotik.html">
 <span class="label-link label-main">живот</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/speredi/ryobra.html">
-<span class="label-link label-main">рёбра</span>
+<a href="http://tatuh.net/vybor-tatu/dlya-devushek/speredi/bok.html">
+<span class="label-link label-main">бок</span>
 </a>
 <a href="http://tatuh.net/vybor-tatu/dlya-devushek/speredi/na-grudi.html">
 <span class="label-link label-main">грудь</span>

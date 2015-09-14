@@ -19,6 +19,9 @@ div#toc_container {
 	font-weight: 400;
   	color: #b2b2b2;
 }
+#toc_container a span:after{
+	content:".";
+}
 
 .mobile-menu-line {
 	display: none;

@@ -1,4 +1,21 @@
 User-agent: *
-Disallow: /wp-admin
-Disallow: /wp-content
-Disallow: /wp-includes
+
+Disallow: */wp-*
+Disallow: *?s=
+Disallow: *?attachment_id=
+Disallow: */feed
+Disallow: /xmlrpc.php
+Disallow: */page/
+Disallow: */uploads
+Disallow: *.jpg
+Disallow: *.png
+Disallow: *.gif
+Disallow: *.tiff
+Disallow: *.bmp
+Disallow: *.jpeg
+Disallow: *.JPG
+Disallow: *.PNG
+Disallow: *.JPEG
+Disallow: *?page_number*
+
+Host: tatuh.net

@@ -25,7 +25,7 @@
 </a>
 </div>
 <div class="img-overlay img-overlay-three">
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-noge"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/leg-thumb.jpg" />
+<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-noge"><img class="thumbnail" src="http://tatuh.net/wp-content/uploads/2015/05/foot-thumb.jpg" _src="/wp-content/themes/tatuh.net/images/choice/women/leg-thumb.jpg" />
 <span>На ноге</span>
 </a>
 </div>
@@ -35,12 +35,12 @@
 </a>
 </div>
 <div class="img-overlay img-overlay-three">
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-golove"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/golova/golova-thumb.jpg" />
+<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-golove"><img class="thumbnail" src="http://tatuh.net/wp-content/uploads/2015/06/golova-thumb.jpg" _src="/wp-content/themes/tatuh.net/images/choice/women/golova/golova-thumb.jpg" />
 <span>На голове</span>
 </a>
 </div>
 <div class="img-overlay img-overlay-three">
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-spine"><img class="thumbnail" src="/wp-content/themes/tatuh.net/images/choice/women/spina/spina-thumb.jpg" />
+<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-spine"><img class="thumbnail" src="http://tatuh.net/wp-content/uploads/spina-thumb.jpg" _src="/wp-content/themes/tatuh.net/images/choice/women/spina/spina-thumb.jpg" />
 <span>На спине</span>
 </a>
 </div>
