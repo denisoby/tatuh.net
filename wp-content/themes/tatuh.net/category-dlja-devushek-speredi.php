@@ -18,13 +18,13 @@
 Фронт-лук: тату для девушек на животе, рёбрах и груди
 </h1>
 <div class="header-links">
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/speredi/zhivotik.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/speredi/zhivotik.html">
 <span class="label-link label-main">живот</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/speredi/bok.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/speredi/bok.html">
 <span class="label-link label-main">бок</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/speredi/na-grudi.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/speredi/na-grudi.html">
 <span class="label-link label-main">грудь</span>
 </a>
 </div>

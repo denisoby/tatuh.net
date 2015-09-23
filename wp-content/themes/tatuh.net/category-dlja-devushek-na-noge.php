@@ -18,16 +18,16 @@
 Подбор татуировки на ноге для девушек
 </h1>
 <div class="header-links">
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-noge/na-bedre.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-noge/na-bedre.html">
 <span class="label-link label-main">бедро</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-noge/na-kolene.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-noge/na-kolene.html">
 <span class="label-link label-main">колено</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-noge/na-ikrah.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-noge/na-ikrah.html">
 <span class="label-link label-main">икры</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-noge/na-stupne.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-noge/na-stupne.html">
 <span class="label-link label-main">ступня и щиколотка</span>
 </a>
 </div>

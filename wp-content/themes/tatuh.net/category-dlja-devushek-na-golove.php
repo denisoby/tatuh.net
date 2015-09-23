@@ -18,13 +18,13 @@
 Подбор татуировки на голове для девушек
 </h1>
 <div class="header-links">
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-golove/golova.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-golove/golova.html">
 <span class="label-link label-main">голова</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-golove/ushi.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-golove/ushi.html">
 <span class="label-link label-main">ухо и заушье</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-golove/sheya.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-golove/sheya.html">
 <span class="label-link label-main">шея</span>
 </a>
 </div>

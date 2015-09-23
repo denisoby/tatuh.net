@@ -18,22 +18,22 @@
 Подбор татуировки на руке для девушек
 </h1>
 <div class="header-links">
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-ruke/na-ladoni.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/na-ladoni.html">
 <span class="label-link label-main">ладонь</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-ruke/na-zapyaste.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/na-zapyaste.html">
 <span class="label-link label-main">запястье</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-ruke/na-lokte.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/na-lokte.html">
 <span class="label-link label-main">локоть</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-ruke/na-pleche-i-predpleche.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/na-pleche-i-predpleche.html">
 <span class="label-link label-main">плечо</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-ruke/na-pleche-i-predpleche.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/na-pleche-i-predpleche.html">
 <span class="label-link label-main">предплечье</span>
 </a>
-<a href="http://tatuh.net/vybor-tatu/dlya-devushek/na-ruke/rukava.html">
+<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/rukava.html">
 <span class="label-link label-main">рукава</span>
 </a>
 </div>
