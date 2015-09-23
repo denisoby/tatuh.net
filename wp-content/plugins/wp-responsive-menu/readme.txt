@@ -2,13 +2,13 @@
 Contributors: sagarseth9,magnigenie
 Tags: Wordpress Responsive Menu, Genesis responsive menu, Genesis Mobile Menu, Thesis Mobile Menu, Thesis Responsive Menu,  Mobile Menu, Responsive Menu Plugin, WP Responsive Menu, Wordpress mobile menu
 Requires at least: 3.4
-Tested up to: 4.2
-Stable tag: 2.0.5
+Tested up to: 4.3
+Stable tag: 2.0.6
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sagar.seth9@gmail.com&item_name=WP%20Responsive%20Menu&return=http://magnigenie.com
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WP Responsive Menu turns your WordPress menu to a highy customizable sliding responsive menu.
+WP Responsive Menu turns your WordPress menu to a highly customizable sliding responsive menu.
 
 == Description ==
 
@@ -54,6 +54,11 @@ Check out [the demo](http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin
 1. Check out [the demo](http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin-wordpress/)
 
 == ChangeLog ==
+
+= Version 2.0.6 =
+
+* Fixed nesting icon issue.
+* Added WordPress 4.3 support.
 
 = Version 2.0.5 =
 

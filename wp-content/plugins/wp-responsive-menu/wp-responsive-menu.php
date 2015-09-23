@@ -3,7 +3,7 @@
 Plugin Name: WP Responsive Menu
 Plugin URI: http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin-wordpress/
 Description: WP Responsive menu is a mobile menu plugin which comes with 1 click installation and has lots of admin option to customize the plugin as per your needs.
-Version: 2.0.5
+Version: 2.0.6
 Author: Nirmal Ram
 Author URI: http://magnigenie.com
 License: GPLv2 or later
@@ -41,7 +41,7 @@ function wprmenu_enqueue_scripts() {
 }
 
 function wpr_search_form() {
-	return '<form role="search" method="get" class="wpr-search-form" action="' . site_url() . '"><label><input type="search" class="wpr-search-field" placeholder="Поиск..." value="" name="s" title="Search for:"></label></form>';
+	return '<form role="search" method="get" class="wpr-search-form" action="' . site_url() . '"><label><input type="search" class="wpr-search-field" placeholder="Поиск ..." value="" name="s" title="Поиск:"></label></form>';
 }
 
 add_action('wp_footer', 'wprmenu_menu', 100);
@@ -60,6 +60,7 @@ function wprmenu_menu() {
 				<?php if($options['bar_logo']) echo '<img class="bar_logo" src="'.$options['bar_logo'].'"/>' ?>
 			</div>
 		</div>
+
 		<div id="wprmenu_menu" class="wprmenu_levels <?php echo $options['position'] ?> wprmenu_custom_icons">
 			<?php if( $options['search_box'] == 'above_menu' ) { ?> 
 			<div class="wpr_search">
@@ -157,7 +158,7 @@ function wprmenu_header_styles() {
 			}
 
 
-			<?php if($options["nesting_icon"] != '') : ?>
+			<?php if( isset( $options["nesting_icon"] ) ) : ?>
 				#wprmenu_menu .wprmenu_icon:before {
 					font-family: 'fontawesome'!important;
 				}
