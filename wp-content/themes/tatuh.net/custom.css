@@ -205,11 +205,10 @@ ol.children {
   	padding-left: 5%;
 }
 .breadcrumbs {
-	color: #FF482A;
   	font-size: 16px;
   	border-bottom: 1px solid #222;
-    border-top: 1px solid #222;
-    padding: 5px 0;
+    	border-top: 1px solid #222;
+    	padding: 5px 0;
   	margin: 0 1.5em;
 }
 .breadcrumbs a {
@@ -275,9 +274,6 @@ ol.children {
     border-top: 1px solid #222;
     margin-bottom: 20px;
     padding: 10px 0;
-}
-.author a {
-	color: #FF482A;
 }
 .comments-link a {
   	color: #898989;
