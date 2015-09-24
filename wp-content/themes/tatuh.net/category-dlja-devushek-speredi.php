@@ -17,17 +17,29 @@
 <h1 class="entry-title">
 Фронт-лук: тату для девушек на животе, рёбрах и груди
 </h1>
-<div class="header-links">
-<a href="http://tatuh.net/vybor-mesta/dlya-devushek/speredi/zhivotik.html">
-<span class="label-link label-main">живот</span>
-</a>
-<a href="http://tatuh.net/vybor-mesta/dlya-devushek/speredi/bok.html">
-<span class="label-link label-main">бок</span>
-</a>
-<a href="http://tatuh.net/vybor-mesta/dlya-devushek/speredi/na-grudi.html">
-<span class="label-link label-main">грудь</span>
-</a>
-</div>
+<?php
+$categories = get_the_category();
+$category_id = $categories[0]->cat_ID;
+$args = array( 'category' => $category_id);
+$myposts = get_posts( $args );
+//rename array
+$tstarray = array();
+
+foreach ( $myposts as $post ) : setup_postdata( $post );
+	$labelName = get_post_meta($post->ID, "label-name", true);
+	if($labelName) $tstarray[$labelName] = get_permalink();
+endforeach;
+wp_reset_postdata();
+
+if($tstarray){
+	echo '<div class="header-links">';
+	echo('Быстрые ссылки: ');
+	foreach ( $tstarray as $key => $value ) {
+		echo'<a href="' . $value . '"><span class="label-link label-main">' . $key . '</span></a>' . "\n";
+	}
+	echo '</div>';
+}
+?>
 </header>
 <div class="entry-content">
 Такие татуировки девушки обычно делают не для кого-то, а для себя любимых. То есть не стоит задачи поразить, покорить, удивить, ошарашить – это само собой. Главное – чтобы отражение в зеркале нравилось и каждая линия дарила удовольствие.

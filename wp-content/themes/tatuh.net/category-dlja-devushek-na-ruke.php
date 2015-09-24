@@ -17,26 +17,29 @@
 <h1 class="entry-title">
 Подбор татуировки на руке для девушек
 </h1>
-<div class="header-links">
-<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/na-ladoni.html">
-<span class="label-link label-main">ладонь</span>
-</a>
-<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/na-zapyaste.html">
-<span class="label-link label-main">запястье</span>
-</a>
-<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/na-lokte.html">
-<span class="label-link label-main">локоть</span>
-</a>
-<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/na-pleche-i-predpleche.html">
-<span class="label-link label-main">плечо</span>
-</a>
-<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/na-pleche-i-predpleche.html">
-<span class="label-link label-main">предплечье</span>
-</a>
-<a href="http://tatuh.net/vybor-mesta/dlya-devushek/na-ruke/rukava.html">
-<span class="label-link label-main">рукава</span>
-</a>
-</div>
+<?php
+$categories = get_the_category();
+$category_id = $categories[0]->cat_ID;
+$args = array( 'category' => $category_id);
+$myposts = get_posts( $args );
+//rename array
+$tstarray = array();
+
+foreach ( $myposts as $post ) : setup_postdata( $post );
+	$labelName = get_post_meta($post->ID, "label-name", true);
+	if($labelName) $tstarray[$labelName] = get_permalink();
+endforeach;
+wp_reset_postdata();
+
+if($tstarray){
+	echo '<div class="header-links">';
+	echo('Быстрые ссылки: ');
+	foreach ( $tstarray as $key => $value ) {
+		echo'<a href="' . $value . '"><span class="label-link label-main">' . $key . '</span></a>' . "\n";
+	}
+	echo '</div>';
+}
+?>
 </header>
 <div class="entry-content">
 Пряча кожу под очередным рисунком, ты всё больше оголяешь душу. Нанося крошечный значок на ладошку, ты даёшь ключик от своей души тому, кто возьмёт тебя за руку. Создавая вместе с тату-мастером новый узор, ты рассказываешь всему миру о том, какая ты на самом деле. Тот, кто увидит и поймёт, станет самым близким тебе человеком.
