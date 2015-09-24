@@ -1,3 +1,14 @@
+.scroll-back-to-top-wrapper {
+	height: 100%;
+}
+.scroll-back-to-top-wrapper:hover {
+	opacity: 0.8;
+}
+.scroll-back-to-top-inner {
+    position: relative;
+    top: 50%;
+}
+
 #toc_container {
   	padding: 1em;
   	margin: 1em 0;
@@ -118,6 +129,18 @@ ul.menu li {
   	.img-overlay span {
 		font-size: 28px;
         	padding: 0 0.5em;
+	}
+	.scroll-back-to-top-wrapper {
+		height: 40px;
+		right: 20px;
+		bottom: 10px;
+	}
+	.scroll-back-to-top-wrapper.show {
+		opacity: 0.8;
+	}
+	.scroll-back-to-top-inner {
+    		position: relative;
+    		top: 0;
 	}
 }
 
