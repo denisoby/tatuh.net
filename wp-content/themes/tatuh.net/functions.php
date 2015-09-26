@@ -14,6 +14,20 @@ if (!function_exists('semplicemente_setup')) :
      * as indicating support for post thumbnails.
      */
 
+// add more buttons to the html editor
+function appthemes_add_quicktags() {
+    if (wp_script_is('quicktags')){
+?>
+    <script type="text/javascript">
+	QTags.addButton( 'eg_header_2', 'h2', '<h2>', '</h2>', 'none', 'Header 2 tag', 1 );
+	QTags.addButton( 'eg_header_3', 'h3', '<h3>', '</h3>', 'none', 'Header 3 tag', 2 );
+	QTags.addButton( 'eg_paragraph', 'p', '<p>', '</p>', 'none', 'Paragraph tag', 3 );
+    </script>
+<?php
+    }
+}
+add_action( 'admin_print_footer_scripts', 'appthemes_add_quicktags' );
+
     function pagination($pages = '', $range = 4)
     {
         $showitems = ($range * 2) + 1;

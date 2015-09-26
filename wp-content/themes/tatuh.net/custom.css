@@ -32,6 +32,7 @@ div#toc_container {
 	color: #fff;
 }
 #toc_container a {
+	font-size: 18px;
 	font-weight: 400;
   	color: #b2b2b2;
 }
@@ -89,8 +90,12 @@ color:#fff;
   	font-size: 16px;
 }
 
+em {
+	color: #fff;
+}
+
 aside ul {
-	line-height: 2em;
+	line-height: 1.5em;
 	margin-left: 1.2em;
 	margin-bottom: 0;
 }
@@ -99,6 +104,7 @@ ul, ol {
 	margin-left: 2.5em;
 	margin-bottom: 1.5em;
 	color: #FF482A;
+	font-size:24px;
 }
 ul {
 	list-style-type: square;
@@ -106,17 +112,16 @@ ul {
 ol {
 	font-style:italic;
 	font-family:Georgia, Times, serif;
-	font-size:24px;
 }
 ol li p, ul li p {
-	margin-bottom: 0.5em;
+	margin-bottom: 0;
 	color: #b2b2b2;
+	font-size:18px;
 }
 
 ol li p {
 	font-style:normal;
 	font-family: 'PT Sans', sans-serif;
-	font-size:18px;
 }
 
 ol li p em, ul li p em {
@@ -281,9 +286,10 @@ ol.children {
   	background-color: rgba(18,18,18,0.9);
 }
 .widget a {
-  font-weight: 400;
-  color: #b2b2b2;
-  text-transform: none;
+	font-size: 18px;
+	font-weight: 400;
+	color: #b2b2b2;
+	text-transform: none;
 }
 .widget a:hover {
   font-weight: 400;
