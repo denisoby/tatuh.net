@@ -122,7 +122,7 @@ input,
 select,
 textarea {
 	color: #b2b2b2;
-	font-family: "Tahoma", sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
 }
@@ -583,11 +583,11 @@ header.entry-header:after {
 }
 
 .widget-title h3 {
-	font-family: "Georgia",​​sans-serif;
-	font-size: 30px;
-	font-weight: 400;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 36px;
 	display: inline-block;
-	padding-bottom: 12px;
+	margin-bottom: 0.5em;
 }
 
 
@@ -904,9 +904,6 @@ object {
 	p {font-size: 12px; line-height:1rem;}
 	.ul-article-margin {font-size: 12px; line-height:1rem;}
 	.readMoreLink {font-size: 14px;}
-	.widget-title h3 {
-		padding: 5px 0;
-	}
 	.entry-content {
 		font-size: 12px;
 	}
