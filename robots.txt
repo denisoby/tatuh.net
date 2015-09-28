@@ -6,6 +6,7 @@ Disallow: *?attachment_id=
 Disallow: */feed
 Disallow: /xmlrpc.php
 Disallow: */page/
+Disallow: /author/*
 Disallow: */uploads
 Disallow: *.jpg
 Disallow: *.png
