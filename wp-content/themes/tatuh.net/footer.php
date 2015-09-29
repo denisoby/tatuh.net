@@ -17,7 +17,7 @@
         ?>
         &copy; <?php echo $year ?> <a href='http://tatuh.net'>Татух.нет</a>
 	<br>
-	Россия, г. Москва, пл. Киевского вокзала, 2
+	Россия, г. Москва, пл. Киевского вокзала, 2, ТЦ «Европейский»
 	<br>
 	e-mail: <a href="mailto:info@tatuh.net">info@tatuh.net</a>
     </div>
