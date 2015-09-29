@@ -1,3 +1,12 @@
+.site-info {
+	font-size: 14px;
+	margin: 1em 0;
+}
+.site-info a {
+	color: #FF482A;
+	font-weight: normal;
+}
+
 .topSearchForm input, .topSearchForm input:focus {
 	border: 1px solid #898989;
 }
@@ -199,7 +208,10 @@ ul.menu li {
 @media all and (max-width: 479px) {
   	.img-overlay-three {
 		width: 100%;
-	}  
+	}
+	.site-info {
+		text-align: left;
+	}
 }
 .comment-author {
 	color: #FF482A;

@@ -12,12 +12,14 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="site-info">
-        <?php
-        $name = get_bloginfo('name');
-        $url = home_url('/');
+        <?php        
         $year = date('Y');
         ?>
-        &copy; <?php echo $year ?> <?php echo $name ?>
+        &copy; <?php echo $year ?> <a href='http://tatuh.net'>Татух.нет</a>
+	<br>
+	Россия, г. Москва, пл. Киевского вокзала, 2
+	<br>
+	e-mail: <a href="mailto:info@tatuh.net">info@tatuh.net</a>
     </div>
 </footer>
 </div><!-- #page -->
