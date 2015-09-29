@@ -20,7 +20,8 @@
     <![endif]-->
     <?php wp_head(); ?>
     <meta name="google-site-verification" content="GgkEEdWr8YF5fB4ORcLDBNikyK4hcdB_x8Rjjl4S6FY" />
-	<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/tatuh.net/custom.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/tatuh.net/custom.css">
+    <script src="/wp-content/themes/tatuh.net/custom.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

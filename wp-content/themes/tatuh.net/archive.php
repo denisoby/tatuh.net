@@ -8,12 +8,20 @@
  */
 
 get_header(); ?>
-<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
-    <?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-</div>
+<?php
+	if (is_category()) {
+    		$cat = get_query_var('cat');
+    		$category = get_category($cat);
+	}
+?>
+	<?php if($category->parent != 0 || is_single()) : ?>
+			<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+				<?php if(function_exists('bcn_display'))
+    					{
+        					bcn_display();
+    					}?>
+			</div>
+	<?php endif; ?>
 	<section class="content-area">
 		<main id="main" class="site-main" role="main">
 
