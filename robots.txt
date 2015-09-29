@@ -22,4 +22,6 @@ Disallow: *?page_number*
 Allow: *.css*
 Allow: *.js*
 
+Sitemap: http://tatuh.net/sitemap.xml
+
 Host: tatuh.net
