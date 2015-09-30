@@ -2,9 +2,13 @@
 	font-size: 14px;
 	margin: 1em 0;
 }
-.site-info a {
+
+a {
 	color: #FF482A;
 	font-weight: normal;
+}
+.main-navigation a, h2 a {
+	color: #fff;
 }
 
 .topSearchForm input, .topSearchForm input:focus {
@@ -54,18 +58,18 @@ div#toc_container {
 }
 
 .pagination {
-padding:20px 0;
-position:relative;
-font-size:18px;
+	padding:20px 0;
+	position:relative;
+	font-size:18px;
 }
 .pagination span, .pagination a {
-display:inline-block;
-margin: 2px 2px 2px 0;
-padding:6px 9px 5px 9px;
-text-decoration:none;
-width:auto;
-color:#fff;
-background: #818181;
+	display:inline-block;
+	margin: 2px 2px 2px 0;
+	padding:6px 9px 5px 9px;
+	text-decoration:none;
+	width:auto;
+	color: #fff;
+	background: #818181;
 }
 .pagination a:hover{
 color:#fff;
@@ -129,7 +133,7 @@ ol li p, ul li p {
 }
 
 ol li p {
-	font-style:normal;
+	font-style: normal;
 	font-family: 'PT Sans', sans-serif;
 }
 
@@ -189,6 +193,18 @@ ul.menu li {
 }
 
 @media screen and (max-width: 768px) {
+	#toc_container {
+		line-height: 1.5em;
+	}
+	#toc_container p.toc_title, ul, ol {
+		font-size: 18px;
+	}
+	ol li p, ul li p {
+		padding-bottom: 1em;
+	}
+	p, #toc_container a, ol li p, ul li p {
+		font-size: 14px;
+	}
   	.label-link.label-main {
     		font-size: 14px;
   	}
@@ -341,9 +357,9 @@ ol.children {
 }
 .sub-menu a:hover {
 	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #171717 0%, #2d2d2d 100%) repeat scroll 0 0;
-    border-bottom: 1px solid #404040;
-    color: #fff;
-    text-shadow: none;
+    	border-bottom: 1px solid #404040;
+   	color: #fff;
+    	text-shadow: none;
 }
 .byline {
 	display: none;
