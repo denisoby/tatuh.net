@@ -128,10 +128,8 @@ ol {
 }
 ol li p, ul li p {
 	margin-bottom: 0;
-	font-size:18px;
-}
-ol li *{
 	color: #b2b2b2;
+	font-size:18px;
 }
 ol li p {
 	font-style: normal;
