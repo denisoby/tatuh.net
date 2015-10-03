@@ -128,10 +128,11 @@ ol {
 }
 ol li p, ul li p {
 	margin-bottom: 0;
-	color: #b2b2b2;
 	font-size:18px;
 }
-
+ol li *{
+	color: #b2b2b2;
+}
 ol li p {
 	font-style: normal;
 	font-family: 'PT Sans', sans-serif;
@@ -148,7 +149,11 @@ ul.menu li {
 
 .img-overlay {
   	float: left;
-    position: relative;
+    	position: relative;
+	line-height: 1.5;
+}
+.img-overlay a {
+	color: #fff;
 }
 .img-overlay-three {
   	padding-right: 1em;
@@ -163,78 +168,6 @@ ul.menu li {
   	padding: 0 1em;
 }
 
-
-@media all and (max-width: 1180px) {
-  	.img-overlay-three {
-		width: 50%;
-	}
-  	.img-overlay span {
-		font-size: 28px;
-        	padding: 0 0.5em;
-	}
-	.scroll-back-to-top-wrapper {
-		height: 40px;
-		right: 20px;
-		bottom: 10px;
-	}
-	.scroll-back-to-top-wrapper.show {
-		opacity: 0.8;
-	}
-	.scroll-back-to-top-inner {
-    		position: relative;
-    		top: 0;
-	}
-}
-
-@media screen and (max-width: 999px) {
-	.main-navigation a {
-		font-size: 24px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	#toc_container {
-		line-height: 1.5em;
-	}
-	#toc_container p.toc_title, ul, ol {
-		font-size: 18px;
-	}
-	ol li p, ul li p {
-		padding-bottom: 1em;
-	}
-	p, #toc_container a, ol li p, ul li p {
-		font-size: 14px;
-	}
-  	.label-link.label-main {
-    		font-size: 14px;
-  	}
-  	.tatuh_top_nav, .site-branding {
-    		display: none;
-  	}
-	.mobile-menu-line {
-		display: block;
-	}
-	#wprmenu_bar {
-		height: 50px;
-		padding: 0.5em;
-	}
-	#wprmenu_bar .wprmenu_icon {
-		margin-top: 5px;
-		margin-right: 0;
-	}
-	#wprmenu_bar .bar_logo {
-		float: right;
-		height: 44px;
-	}
-}
-@media all and (max-width: 479px) {
-  	.img-overlay-three {
-		width: 100%;
-	}
-	.site-info {
-		text-align: left;
-	}
-}
 .comment-author {
 	color: #FF482A;
 }
@@ -366,4 +299,77 @@ ol.children {
 }
 .post-date {
 	color: #fff;
+}
+
+@media all and (max-width: 1180px) {
+  	.img-overlay-three {
+		width: 50%;
+	}
+  	.img-overlay span {
+		font-size: 28px;
+        	padding: 0 0.5em;
+	}
+	.scroll-back-to-top-wrapper {
+		height: 40px;
+		right: 20px;
+		bottom: 10px;
+	}
+	.scroll-back-to-top-wrapper.show {
+		opacity: 0.8;
+	}
+	.scroll-back-to-top-inner {
+    		position: relative;
+    		top: 0;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.main-navigation a {
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#toc_container {
+		line-height: 1.5em;
+	}
+	#toc_container p.toc_title, ul, ol {
+		font-size: 18px;
+	}
+	p, #toc_container a, ol li p, ul li p {
+		font-size: 14px;
+	}
+  	.label-link.label-main {
+    		font-size: 14px;
+  	}
+  	.tatuh_top_nav, .site-branding {
+    		display: none;
+  	}
+	.mobile-menu-line {
+		display: block;
+	}
+	#wprmenu_bar {
+		height: 50px;
+		padding: 0.5em;
+	}
+	#wprmenu_bar .wprmenu_icon {
+		margin-top: 5px;
+		margin-right: 0;
+	}
+	#wprmenu_bar .bar_logo {
+		float: right;
+		height: 44px;
+	}
+}
+@media all and (max-width: 479px) {
+	.thumbnail {
+		margin: 0;
+	}
+  	.img-overlay-three {
+		width: 100%;
+	}
+	.site-info {
+		line-height: 1.2em;
+		text-align: left;
+	}
 }
