@@ -14,6 +14,13 @@ if (!function_exists('semplicemente_setup')) :
      * as indicating support for post thumbnails.
      */
 
+// remove deafault quicktags
+function remove_quicktags( $qtInit ) {
+    $qtInit['buttons'] = 'link';
+    return $qtInit;
+}
+add_filter('quicktags_settings', 'remove_quicktags');
+
 // add more buttons to the html editor
 function appthemes_add_quicktags() {
     if (wp_script_is('quicktags')){
@@ -21,7 +28,10 @@ function appthemes_add_quicktags() {
     <script type="text/javascript">
 	QTags.addButton( 'eg_header_2', 'h2', '<h2>', '</h2>', 'none', 'Header 2 tag', 1 );
 	QTags.addButton( 'eg_header_3', 'h3', '<h3>', '</h3>', 'none', 'Header 3 tag', 2 );
-	QTags.addButton( 'eg_paragraph', 'p', '<p>', '</p>', 'none', 'Paragraph tag', 3 );
+	QTags.addButton( 'eg_strong', 'Жирный', '<strong>', '</strong>', 'none', 'Strong tag', 3 );
+	QTags.addButton( 'eg_em', 'Курсив', '<em>', '</em>', 'none', 'EM tag', 4 );
+	QTags.addButton( 'eg_ul', 'Список НЕнумерованный','<ul>\n<li><p>Text</p></li>\n<li><p>Text</p></li>\n<li><p>Text</p></li>\n<li><p>Text</p></li>\n<li><p>Text</p></li>\n</ul>\n', '', 'none', 'UL tag', 5 );
+	QTags.addButton( 'eg_ol', 'Список нумерованный','<ol>\n<li><p>Text</p></li>\n<li><p>Text</p></li>\n<li><p>Text</p></li>\n<li><p>Text</p></li>\n<li><p>Text</p></li>\n</ol>\n', '', 'none', 'OL tag', 6 );
     </script>
 <?php
     }
