@@ -1,3 +1,7 @@
+.comment-list {
+	font-size: 18px;
+}
+
 h2, h3 {
 	margin-bottom: 1em;
 }
@@ -163,17 +167,17 @@ ul.menu li {
 .img-overlay span {
   	background-color: #FF482A;
   	font-size: 30px;
-    position: absolute;
+	position: absolute;
   	left: 20px;
   	bottom: 20px;
   	padding: 0 1em;
 }
 
 .comment-author {
-	color: #FF482A;
+	color: #fff;
 }
 .comment-author b {
-	color: #FF482A;
+	color: #fff;
 }
 .comment-metadata a {
 	font-weight: 400;  	
@@ -186,10 +190,10 @@ ul.menu li {
 }
 .comment-list li article{
 	border-bottom: 1px solid #898989;
-	padding: 1.5em 0;
+	padding: 1em 0;
 }
 .comments-area {
-	margin-top: 5em;
+	margin-top: 2em;
 }
 .comment-content {
 	padding-top: 1.5em;
