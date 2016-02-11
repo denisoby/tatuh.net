@@ -38,7 +38,7 @@ function wpr_add_responsive_menu( $menu ) {
 	$menu['menu_title']  = 'WPR Menu';
 	$menu['mode']		 = 'menu';
 	$menu['menu_slug']   = 'wp-responsive-menu';
-	$menu['position']    = '30';
+	$menu['position']    = '200';
 	return $menu;
 }
 /**
@@ -94,6 +94,12 @@ function wpr_optionsframework_options() {
 	'std' => 'hide',
 	'options' => array('above_menu' => 'Above Menu','below_menu' => 'Below Menu', 'hide'=> 'Hide search box' ),
 	'type' => 'select');
+
+	$options[] = array('name' => __(' Search Box Text', 'wprmenu'),
+	'desc' => __('Enter the text that would be displayed on the search box placeholder.', 'wprmenu'),
+	'id' => 'search_box_text',
+	'std' => 'Search...',
+	'type' => 'text');
 		
 	$options[] = array('name' => __('Allow zoom on mobile devices', 'wprmenu'),
 		'desc' => __('', 'wprmenu'),

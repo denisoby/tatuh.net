@@ -4,30 +4,6 @@
  */
 ?>
 
-<?php
-$categories = get_the_category();
-$category_id = $categories[0]->cat_ID;
-$args = array( 'category' => $category_id);
-$myposts = get_posts( $args );
-//rename array
-$tstarray = array();
-
-foreach ( $myposts as $post ) : setup_postdata( $post );
-	$labelName = get_post_meta($post->ID, "label-name", true);
-	if($labelName) $tstarray[$labelName] = get_permalink();
-endforeach;
-wp_reset_postdata();
-
-if($tstarray){
-	echo '<div class="header-links">';
-	echo('Быстрые ссылки: ');
-	foreach ( $tstarray as $key => $value ) {
-		echo'<a href="' . $value . '"><span class="label-link label-main">' . $key . '</span></a>' . "\n";
-	}
-	echo '</div>';
-}
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

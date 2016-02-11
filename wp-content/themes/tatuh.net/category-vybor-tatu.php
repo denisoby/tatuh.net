@@ -9,7 +9,7 @@
 <article>
 <header class="page-header">
 <h1 class="entry-title">
-Выбор места
+Подбор тату
 </h1>
 </header>
 <div class="entry-content">

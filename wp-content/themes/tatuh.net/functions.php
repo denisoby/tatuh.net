@@ -14,6 +14,27 @@ if (!function_exists('semplicemente_setup')) :
      * as indicating support for post thumbnails.
      */
 
+add_filter ('the_content', 'insertADSense');
+function insertADSense($content) {
+	$textToReplace = '<h2>Фото</h2>';
+	$ADSenseScript =
+		'<p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- tatu01 -->
+		<ins class="adsbygoogle"
+   			style="display:block"
+     			data-ad-client="ca-pub-0017098879698018"
+     		data-ad-slot="4183090555"
+     		data-ad-format="auto">
+		</ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script></p>';
+   if(is_single()) {
+	$content = str_replace($textToReplace,$textToReplace.$ADSenseScript,$content);
+   }
+   return $content;
+}
+
 // allow media uploads to contributors
 if ( current_user_can('contributor') && !current_user_can('upload_files') )
 	add_action('admin_init', 'allow_contributor_uploads');
